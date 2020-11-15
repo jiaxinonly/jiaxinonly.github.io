@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>AC不是说说而已</title>
   <icon>https://blogs.accepted.fun/icon.png</icon>
-  
+  <subtitle>悲鸣</subtitle>
   <link href="https://blogs.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blogs.accepted.fun/"/>
