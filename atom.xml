@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>AC不是说说而已</title>
+  <icon>https://blog.accepted.fun/icon.png</icon>
+  <subtitle>悲鸣</subtitle>
+  <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
+  
+  <link href="https://blog.accepted.fun/"/>
+  <updated>2020-11-29T14:40:56.881Z</updated>
+  <id>https://blog.accepted.fun/</id>
+  
+  <author>
+    <name>悲鸣</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Node.js安装及配置</title>
+    <link href="https://blog.accepted.fun/2020/11/29/Node-js%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"/>
+    <id>https://blog.accepted.fun/2020/11/29/Node-js%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-11-29T14:00:25.000Z</published>
+    <updated>2020-11-29T14:40:56.881Z</updated>
+    
+    
+    <summary type="html">nodejs安装及配置详细教程</summary>
+    
+    
+    
+    <category term="软件" scheme="https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="Nodejs" scheme="https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/Nodejs/"/>
+    
+    <category term="安装及配置" scheme="https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/Nodejs/%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"/>
+    
+    
+    <category term="软件安装" scheme="https://blog.accepted.fun/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+</feed>
