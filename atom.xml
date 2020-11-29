@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>AC不是说说而已</title>
-  <icon>https://blogs.accepted.fun/icon.png</icon>
+  <icon>https://blog.accepted.fun/icon.png</icon>
   <subtitle>悲鸣</subtitle>
-  <link href="https://blogs.accepted.fun/atom.xml" rel="self"/>
+  <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
-  <link href="https://blogs.accepted.fun/"/>
+  <link href="https://blog.accepted.fun/"/>
   <updated>2020-11-16T16:02:13.699Z</updated>
-  <id>https://blogs.accepted.fun/</id>
+  <id>https://blog.accepted.fun/</id>
   
   <author>
     <name>悲鸣</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://blogs.accepted.fun/2020/11/13/hello-world/"/>
-    <id>https://blogs.accepted.fun/2020/11/13/hello-world/</id>
+    <link href="https://blog.accepted.fun/2020/11/13/hello-world/"/>
+    <id>https://blog.accepted.fun/2020/11/13/hello-world/</id>
     <published>2020-11-13T08:48:31.747Z</published>
     <updated>2020-11-16T16:02:13.699Z</updated>
     

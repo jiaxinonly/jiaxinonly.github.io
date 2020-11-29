@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blogs.accepted.fun/2020/11/13/hello-world/</loc>
+    <loc>https://blog.accepted.fun/2020/11/13/hello-world/</loc>
     
     <lastmod>2020-11-16</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blogs.accepted.fun/categories/index.html</loc>
+    <loc>https://blog.accepted.fun/categories/index.html</loc>
     
     <lastmod>2020-11-16</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blogs.accepted.fun/tags/index.html</loc>
+    <loc>https://blog.accepted.fun/tags/index.html</loc>
     
     <lastmod>2020-11-16</lastmod>
     
@@ -24,8 +24,8 @@
   
 
   <url>
-    <loc>https://blogs.accepted.fun/</loc>
-    <lastmod>2020-11-27</lastmod>
+    <loc>https://blog.accepted.fun/</loc>
+    <lastmod>2020-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
