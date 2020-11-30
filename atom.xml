@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2020-11-30T05:53:42.396Z</updated>
+  <updated>2020-11-30T05:58:28.678Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>不能有中文吗</title>
+    <link href="https://blog.accepted.fun/2020/11/30/%E4%B8%8D%E8%83%BD%E6%9C%89%E4%B8%AD%E6%96%87%E5%90%97/"/>
+    <id>https://blog.accepted.fun/2020/11/30/%E4%B8%8D%E8%83%BD%E6%9C%89%E4%B8%AD%E6%96%87%E5%90%97/</id>
+    <published>2020-11-30T05:58:28.000Z</published>
+    <updated>2020-11-30T05:58:28.678Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Nodejs安装及配置</title>
