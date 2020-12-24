@@ -4,19 +4,19 @@
   <url>
     <loc>https://blog.accepted.fun/2020/12/17/CentOS7.5%E5%AE%89%E8%A3%85/</loc>
     
-    <lastmod>2020-12-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/categories/index.html</loc>
-    
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-20</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/2020/11/30/Nodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2020-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/index.html</loc>
     
     <lastmod>2020-12-02</lastmod>
     
@@ -32,7 +32,7 @@
 
   <url>
     <loc>https://blog.accepted.fun/</loc>
-    <lastmod>2020-12-17</lastmod>
+    <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -40,7 +40,7 @@
   
   <url>
     <loc>https://blog.accepted.fun/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2020-12-17</lastmod>
+    <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -49,35 +49,35 @@
   
   <url>
     <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2020-12-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/Nodejs/</loc>
-    <lastmod>2020-12-17</lastmod>
+    <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/CentOS/</loc>
-    <lastmod>2020-12-17</lastmod>
+    <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/Nodejs/%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2020-12-17</lastmod>
+    <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/Nodejs/</loc>
+    <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/CentOS/%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2020-12-17</lastmod>
+    <lastmod>2020-12-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/Nodejs/%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
