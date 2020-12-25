@@ -13,18 +13,20 @@
       
       <categories>
           
-          <category> 软件 </category>
+          <category> 运维 </category>
           
           <category> Zabbix </category>
-          
-          <category> 安装 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 软件安装 </tag>
+            <tag> 运维 </tag>
+            
+            <tag> linux </tag>
+            
+            <tag> Zabbix </tag>
             
         </tags>
       
