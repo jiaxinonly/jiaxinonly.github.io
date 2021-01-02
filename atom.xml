@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2020-12-25T14:58:44.382Z</updated>
+  <updated>2021-01-02T08:44:19.254Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>西南科技大学学生邮箱申请</title>
+    <link href="https://blog.accepted.fun/2021/01/02/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1%E7%94%B3%E8%AF%B7/"/>
+    <id>https://blog.accepted.fun/2021/01/02/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1%E7%94%B3%E8%AF%B7/</id>
+    <published>2021-01-02T08:41:22.000Z</published>
+    <updated>2021-01-02T08:44:19.254Z</updated>
+    
+    
+    <summary type="html">西南科技大学学生邮箱申请</summary>
+    
+    
+    
+    <category term="西南科技大学" scheme="https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/"/>
+    
+    <category term="学生邮箱" scheme="https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/"/>
+    
+    
+    <category term="西南科技大学" scheme="https://blog.accepted.fun/tags/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/"/>
+    
+    <category term="学生邮箱" scheme="https://blog.accepted.fun/tags/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>Zabbix安装</title>
