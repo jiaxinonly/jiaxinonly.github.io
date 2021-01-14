@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2021-01-14T13:14:06.432Z</updated>
+  <updated>2021-01-14T13:38:06.241Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -21,19 +21,23 @@
     <link href="https://blog.accepted.fun/2021/01/13/Win10%E5%85%B3%E9%97%ADWindowsDefender/"/>
     <id>https://blog.accepted.fun/2021/01/13/Win10%E5%85%B3%E9%97%ADWindowsDefender/</id>
     <published>2021-01-13T13:10:47.000Z</published>
-    <updated>2021-01-14T13:14:06.432Z</updated>
+    <updated>2021-01-14T13:38:06.241Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Win10-关闭-Windows-Defender&quot;&gt;&lt;a href=&quot;#Win10-关闭-Windows-Defender&quot; class=&quot;headerlink&quot; title=&quot;Win10 关闭 Windows Defender&quot;&gt;&lt;/a&gt;Win10 关闭</summary>
-        
-      
+    <summary type="html">Win10关闭Windows Defender</summary>
     
     
     
+    <category term="win10" scheme="https://blog.accepted.fun/categories/win10/"/>
+    
+    <category term="Windows Defender" scheme="https://blog.accepted.fun/categories/win10/Windows-Defender/"/>
+    
+    
+    <category term="操作系统" scheme="https://blog.accepted.fun/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="win10" scheme="https://blog.accepted.fun/tags/win10/"/>
+    
+    <category term="Windows Defender" scheme="https://blog.accepted.fun/tags/Windows-Defender/"/>
     
   </entry>
   
@@ -115,7 +119,7 @@
     <link href="https://blog.accepted.fun/2020/12/17/CentOS7.5%E5%AE%89%E8%A3%85/"/>
     <id>https://blog.accepted.fun/2020/12/17/CentOS7.5%E5%AE%89%E8%A3%85/</id>
     <published>2020-12-17T15:16:45.000Z</published>
-    <updated>2021-01-14T11:56:08.853Z</updated>
+    <updated>2021-01-14T13:36:07.315Z</updated>
     
     
     <summary type="html">VMware安装CentOS7.5</summary>
@@ -130,6 +134,8 @@
     
     
     <category term="软件安装" scheme="https://blog.accepted.fun/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="操作系统" scheme="https://blog.accepted.fun/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
