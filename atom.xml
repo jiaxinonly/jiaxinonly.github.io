@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2021-01-14T13:58:28.115Z</updated>
+  <updated>2021-01-19T12:31:41.564Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Windows激活</title>
+    <link href="https://blog.accepted.fun/2021/01/19/Windows%E6%BF%80%E6%B4%BB/"/>
+    <id>https://blog.accepted.fun/2021/01/19/Windows%E6%BF%80%E6%B4%BB/</id>
+    <published>2021-01-19T12:11:05.000Z</published>
+    <updated>2021-01-19T12:31:41.564Z</updated>
+    
+    
+    <summary type="html">windows 10和windows 7激活教程附工具</summary>
+    
+    
+    
+    <category term="win10" scheme="https://blog.accepted.fun/categories/win10/"/>
+    
+    <category term="激活" scheme="https://blog.accepted.fun/categories/%E6%BF%80%E6%B4%BB/"/>
+    
+    <category term="win7" scheme="https://blog.accepted.fun/categories/win10/win7/"/>
+    
+    
+    <category term="win10" scheme="https://blog.accepted.fun/tags/win10/"/>
+    
+    <category term="激活" scheme="https://blog.accepted.fun/tags/%E6%BF%80%E6%B4%BB/"/>
+    
+    <category term="Windows" scheme="https://blog.accepted.fun/tags/Windows/"/>
+    
+    <category term="win7" scheme="https://blog.accepted.fun/tags/win7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Win10关闭WindowsDefender</title>
     <link href="https://blog.accepted.fun/2021/01/13/Win10%E5%85%B3%E9%97%ADWindowsDefender/"/>
     <id>https://blog.accepted.fun/2021/01/13/Win10%E5%85%B3%E9%97%ADWindowsDefender/</id>
     <published>2021-01-13T13:10:47.000Z</published>
-    <updated>2021-01-14T13:58:28.115Z</updated>
+    <updated>2021-01-19T12:30:36.241Z</updated>
     
     
     <summary type="html">Win10关闭Windows Defender</summary>
@@ -46,7 +75,7 @@
     <link href="https://blog.accepted.fun/2021/01/02/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1%E7%94%B3%E8%AF%B7/"/>
     <id>https://blog.accepted.fun/2021/01/02/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1%E7%94%B3%E8%AF%B7/</id>
     <published>2021-01-02T08:41:22.000Z</published>
-    <updated>2021-01-14T12:33:30.976Z</updated>
+    <updated>2021-01-19T12:30:42.543Z</updated>
     
     
     <summary type="html">西南科技大学学生邮箱申请</summary>

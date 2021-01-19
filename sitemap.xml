@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.accepted.fun/2021/01/19/Windows%E6%BF%80%E6%B4%BB/</loc>
+    
+    <lastmod>2021-01-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/2021/01/02/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1%E7%94%B3%E8%AF%B7/</loc>
+    
+    <lastmod>2021-01-19</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.accepted.fun/2021/01/13/Win10%E5%85%B3%E9%97%ADWindowsDefender/</loc>
     
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     
   </url>
   
@@ -17,13 +31,6 @@
   
   <url>
     <loc>https://blog.accepted.fun/2020/11/30/Nodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</loc>
-    
-    <lastmod>2021-01-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/2021/01/02/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1%E7%94%B3%E8%AF%B7/</loc>
     
     <lastmod>2021-01-14</lastmod>
     
@@ -60,7 +67,7 @@
 
   <url>
     <loc>https://blog.accepted.fun/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -68,70 +75,91 @@
   
   <url>
     <loc>https://blog.accepted.fun/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/tags/%E8%BF%90%E7%BB%B4/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/tags/linux/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/tags/KVM/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/tags/win10/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/tags/Windows-Defender/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/tags/%E6%BF%80%E6%B4%BB/</loc>
+    <lastmod>2021-01-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/tags/Windows/</loc>
+    <lastmod>2021-01-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/tags/win7/</loc>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/tags/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/tags/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/tags/Zabbix/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -140,84 +168,98 @@
   
   <url>
     <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/categories/%E8%BF%90%E7%BB%B4/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/categories/win10/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/CentOS/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/</loc>
-    <lastmod>2021-01-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/Nodejs/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <loc>https://blog.accepted.fun/categories/%E6%BF%80%E6%B4%BB/</loc>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/categories/%E8%BF%90%E7%BB%B4/KVM/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/Nodejs/</loc>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/categories/win10/Windows-Defender/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/CentOS/%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <loc>https://blog.accepted.fun/categories/win10/win7/</loc>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/categories/%E8%BD%AF%E4%BB%B6/Nodejs/%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/</loc>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.accepted.fun/categories/%E8%BF%90%E7%BB%B4/Zabbix/</loc>
-    <lastmod>2021-01-14</lastmod>
+    <lastmod>2021-01-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/</loc>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
