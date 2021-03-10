@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2021-03-10T14:32:52.727Z</updated>
+  <updated>2021-03-10T14:43:09.199Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.accepted.fun/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/"/>
     <id>https://blog.accepted.fun/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/</id>
     <published>2021-03-06T13:52:34.000Z</published>
-    <updated>2021-03-10T14:32:52.727Z</updated>
+    <updated>2021-03-10T14:43:09.199Z</updated>
     
     
     <summary type="html">Kubernetes集群安装</summary>
@@ -89,13 +89,13 @@
     <category term="win7" scheme="https://blog.accepted.fun/categories/%E6%BF%80%E6%B4%BB/win7/"/>
     
     
+    <category term="win10" scheme="https://blog.accepted.fun/tags/win10/"/>
+    
     <category term="激活" scheme="https://blog.accepted.fun/tags/%E6%BF%80%E6%B4%BB/"/>
     
     <category term="Windows" scheme="https://blog.accepted.fun/tags/Windows/"/>
     
     <category term="win7" scheme="https://blog.accepted.fun/tags/win7/"/>
-    
-    <category term="win10" scheme="https://blog.accepted.fun/tags/win10/"/>
     
   </entry>
   

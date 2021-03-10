@@ -158,6 +158,20 @@
   </url>
   
   <url>
+    <loc>https://blog.accepted.fun/tags/win10/</loc>
+    <lastmod>2021-03-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/tags/Windows-Defender/</loc>
+    <lastmod>2021-03-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.accepted.fun/tags/%E6%BF%80%E6%B4%BB/</loc>
     <lastmod>2021-03-10</lastmod>
     <changefreq>daily</changefreq>
@@ -173,20 +187,6 @@
   
   <url>
     <loc>https://blog.accepted.fun/tags/win7/</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/tags/win10/</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/tags/Windows-Defender/</loc>
     <lastmod>2021-03-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -251,7 +251,7 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E6%BF%80%E6%B4%BB/</loc>
+    <loc>https://blog.accepted.fun/categories/win10/</loc>
     <lastmod>2021-03-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -265,7 +265,7 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/win10/</loc>
+    <loc>https://blog.accepted.fun/categories/%E6%BF%80%E6%B4%BB/</loc>
     <lastmod>2021-03-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -300,14 +300,14 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E6%BF%80%E6%B4%BB/win10/</loc>
+    <loc>https://blog.accepted.fun/categories/win10/Windows-Defender/</loc>
     <lastmod>2021-03-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/win10/Windows-Defender/</loc>
+    <loc>https://blog.accepted.fun/categories/%E6%BF%80%E6%B4%BB/win10/</loc>
     <lastmod>2021-03-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
