@@ -167,75 +167,87 @@ if (asideStatus !== undefined) {
      document.documentElement.classList.remove('hide-aside')
    }
 }})()</script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="AC不是说说而已" type="application/atom+xml">
-</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://source.accepted.fun/image/cover/9.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">AC不是说说而已</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><h1 class="post-title">Kubernetes集群安装</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-06T13:52:34.000Z" title="发表于 2021-03-06 21:52:34">2021-03-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-10T08:38:56.000Z" title="更新于 2021-03-10 16:38:56">2021-03-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BF%90%E7%BB%B4/">运维</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BF%90%E7%BB%B4/kubernetes/">kubernetes</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Kubernetes集群安装"><a href="#Kubernetes集群安装" class="headerlink" title="Kubernetes集群安装"></a>Kubernetes集群安装</h1><blockquote>
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://source.accepted.fun/image/cover/9.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">AC不是说说而已</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><h1 class="post-title">Kubernetes集群安装</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-06T13:52:34.000Z" title="发表于 2021-03-06 21:52:34">2021-03-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-10T08:38:56.000Z" title="更新于 2021-03-10 16:38:56">2021-03-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BF%90%E7%BB%B4/">运维</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BF%90%E7%BB%B4/kubernetes/">kubernetes</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="kubernetes集群安装"><a class="markdownIt-Anchor" href="#kubernetes集群安装"></a> Kubernetes集群安装</h1>
+<blockquote>
 <p>虚拟系统：CentOS 7.5(1804) 最小安装</p>
 <p>虚拟机软件： VMware Workstation 16 Pro</p>
 </blockquote>
 <div class="tabs" id="部署形式"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#部署形式-1">单master部署</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="部署形式-1"><blockquote>
 <p>学习环境使用，部署简单</p>
 </blockquote>
-<h2 id="安装准备"><a href="#安装准备" class="headerlink" title="安装准备"></a>安装准备</h2><ol>
-<li><p>参考<a href="https://blog.accepted.fun/2020/12/17/CentOS7.5%E5%AE%89%E8%A3%85/">CentOS7.5安装</a>三台虚拟机并配置好网络，建议每台虚拟机配置<strong>2核2G（含）</strong>以上</p>
-<h5 id="CentOS7-5-三台主机环境："><a href="#CentOS7-5-三台主机环境：" class="headerlink" title="CentOS7.5  三台主机环境："></a>CentOS7.5  三台主机环境：</h5><ul>
+<h2 id="安装准备"><a class="markdownIt-Anchor" href="#安装准备"></a> 安装准备</h2>
+<ol>
+<li>
+<p>参考<a href="https://blog.accepted.fun/2020/12/17/CentOS7.5%E5%AE%89%E8%A3%85/">CentOS7.5安装</a>三台虚拟机并配置好网络，建议每台虚拟机配置**2核2G（含）**以上</p>
+<h5 id="centos75-三台主机环境"><a class="markdownIt-Anchor" href="#centos75-三台主机环境"></a> CentOS7.5  三台主机环境：</h5>
+<ul>
 <li>k8s-master 192.168.199.129</li>
 <li>k8s-node1 192.168.199.130</li>
 <li>k8s-node2 192.168.199.131</li>
 </ul>
 </li>
 </ol>
-<h2 id="初始化环境"><a href="#初始化环境" class="headerlink" title="初始化环境"></a>初始化环境</h2><ol>
-<li><p>关闭防火墙并禁止开机启动（<strong>三台主机都执行</strong>）</p>
+<h2 id="初始化环境"><a class="markdownIt-Anchor" href="#初始化环境"></a> 初始化环境</h2>
+<ol>
+<li>
+<p>关闭防火墙并禁止开机启动（<strong>三台主机都执行</strong>）</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld # 关闭防火墙</span><br><span class="line">systemctl disable firewalld # 禁止开机启动</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>关闭selinux（<strong>三台主机都执行</strong>）</p>
+<li>
+<p>关闭selinux（<strong>三台主机都执行</strong>）</p>
 <blockquote>
 <p>修改/etc/selinux/config配置文件中的SELINUX=enforcing为SELINUX=disabled</p>
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -i &#x27;s/SELINUX=enforcing/SELINUX=disabled/&#x27; /etc/selinux/config</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>关闭swap（<strong>三台主机都执行</strong>）</p>
+<li>
+<p>关闭swap（<strong>三台主机都执行</strong>）</p>
 <blockquote>
 <p>修改/etc/fstab配置文件，将swap配置注释掉</p>
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -ri &#x27;s/.*swap.*/#&amp;/&#x27; /etc/fstab</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>同步时间（<strong>三台主机都执行</strong>）</p>
+<li>
+<p>同步时间（<strong>三台主机都执行</strong>）</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum -y install ntpdate # 安装ntpdate</span><br><span class="line">ntpdate ntp.aliyun.com # 同步时间</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>将桥接网络数据传递到iptables链中（<strong>三台主机都执行</strong>）</p>
+<li>
+<p>将桥接网络数据传递到iptables链中（<strong>三台主机都执行</strong>）</p>
 <blockquote>
 <p>配置内核参数，写入到/etc/sysctl.d/kubernetes.conf文件中</p>
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; /etc/sysctl.d/kubernetes.conf &lt;&lt; EOF</span><br><span class="line">   net.bridge.bridge-nf-call-ip6tables = 1</span><br><span class="line">   net.bridge.bridge-nf-call-iptables = 1</span><br><span class="line">EOF</span><br><span class="line">sysctl --system # 加载配置文件</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>设置主机名（<strong>每台主机分别执行</strong>）</p>
+<li>
+<p>设置主机名（<strong>每台主机分别执行</strong>）</p>
 <div class="tabs" id="设置主机名"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#设置主机名-1">master</button></li><li class="tab"><button type="button" data-href="#设置主机名-2">node1</button></li><li class="tab"><button type="button" data-href="#设置主机名-3">node2</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="设置主机名-1"><p>k8s-master主机上执行</p>
+</li>
+</ol>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostnamectl --static set-hostname k8s-master</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="设置主机名-2"><p>k8s-node1主机上执行</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostnamectl --static set-hostname k8s-node1</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="设置主机名-3"><p>k8s-node2主机上执行</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostnamectl --static set-hostname k8s-node2</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
+<ol start="2">
+<li>
+<p>添加hosts记录（<strong>三台主机都执行</strong>）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cat &gt;&gt; /etc/hosts &lt;&lt; EOF</span><br><span class="line">192.168.199.129 k8s-master </span><br><span class="line">192.168.199.130 k8s-node1</span><br><span class="line">192.168.199.131 k8s-node2</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<ol start="2">
-<li><p>添加hosts记录（<strong>三台主机都执行</strong>）</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cat &gt;&gt; /etc/hosts &lt;&lt; EOF</span><br><span class="line">192.168.199.129 k8s-master </span><br><span class="line">192.168.199.130 k8s-node1</span><br><span class="line">192.168.199.131 k8s-node2</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
-<h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2></li>
-</ol>
+<h2 id="安装docker"><a class="markdownIt-Anchor" href="#安装docker"></a> 安装docker</h2>
 <blockquote>
 <p><strong>三台主机都执行</strong></p>
 </blockquote>
 <ol>
-<li><p>yum安装docker</p>
+<li>
+<p>yum安装docker</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install docker</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>配置docker加速器</p>
+<li>
+<p>配置docker加速器</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">tee /etc/docker/daemon.json &lt;&lt; EOF</span><br><span class="line">&#123;</span><br><span class="line">    &quot;registry-mirrors&quot;: [</span><br><span class="line">        &quot;https://reg-mirror.qiniu.com&quot;,</span><br><span class="line">        &quot;http://docker.mirrors.ustc.edu.cn&quot;,</span><br><span class="line">        &quot;http://hub-mirror.c.163.com&quot;,</span><br><span class="line">        &quot;https://registry.docker-cn.com&quot;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>设置docker开机启动</p>
+<li>
+<p>设置docker开机启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable docker</span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ol>
 <div class="tabs" id="安装方式"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#安装方式-1">手动yum安装</button></li><li class="tab"><button type="button" data-href="#安装方式-2">kubeadm安装方式</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="安装方式-1"><blockquote>
@@ -244,205 +256,247 @@ if (asideStatus !== undefined) {
 <div class="tabs" id="安装和配置"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#安装和配置-1">master</button></li><li class="tab"><button type="button" data-href="#安装和配置-2">node1</button></li><li class="tab"><button type="button" data-href="#安装和配置-3">node2</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="安装和配置-1"><blockquote>
 <p><strong>k8s-master主机上执行</strong></p>
 </blockquote>
-<h2 id="安装etcd"><a href="#安装etcd" class="headerlink" title="安装etcd"></a>安装etcd</h2><ol>
-<li><p>yum安装etcd</p>
+<h2 id="安装etcd"><a class="markdownIt-Anchor" href="#安装etcd"></a> 安装etcd</h2>
+<ol>
+<li>
+<p>yum安装etcd</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install etcd</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开etcd配置文件</p>
+<li>
+<p>打开etcd配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/etcd/etcd.conf</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>修改配置如下</p>
+<li>
+<p>修改配置如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ETCD_DATA_DIR=&quot;/var/lib/etcd/default.etcd&quot; </span><br><span class="line">ETCD_LISTEN_CLIENT_URLS=&quot;http://0.0.0.0:2379&quot; # 修改localhost为0.0.0.0</span><br><span class="line">ETCD_NAME=&quot;default&quot; </span><br><span class="line">ETCD_ADVERTISE_CLIENT_URLS=&quot;http://192.168.199.129:2379&quot; # 修改localhost为master的ip地址</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>设置etcd开机启动</p>
+<li>
+<p>设置etcd开机启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable etcd</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动etcd</p>
+<li>
+<p>启动etcd</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start etcd</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>查看etcd服务状态</p>
+<li>
+<p>查看etcd服务状态</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">etcdctl -C http:&#x2F;&#x2F;127.0.0.1:2379 cluster-health</span><br></pre></td></tr></table></figure>
-
-<p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210307221121962.png" alt="查看etcd服务状态"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210307221121962.png" alt="查看etcd服务状态" /></p>
 </li>
 </ol>
-<h2 id="安装flannel网络"><a href="#安装flannel网络" class="headerlink" title="安装flannel网络"></a>安装flannel网络</h2><ol>
-<li><p>yum安装flannel</p>
+<h2 id="安装flannel网络"><a class="markdownIt-Anchor" href="#安装flannel网络"></a> 安装flannel网络</h2>
+<ol>
+<li>
+<p>yum安装flannel</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install flannel</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开flannel配置文件</p>
+<li>
+<p>打开flannel配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/flanneld</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>修改配置如下</p>
+<li>
+<p>修改配置如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FLANNEL_ETCD_ENDPOINTS=&quot;http://192.168.199.129:2379&quot; # 修改127.0.0.1为master的ip地址</span><br><span class="line">FLANNEL_ETCD_PREFIX=&quot;/k8s/network&quot; # 修改atomic.io为k8s</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>为falnnel配置key</p>
+<li>
+<p>为falnnel配置key</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">etcdctl set /k8s/network/config &#x27;&#123;&quot;Network&quot;: &quot;10.253.0.0/16&quot;&#125;&#x27;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>设置flannel开机启动</p>
+<li>
+<p>设置flannel开机启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable flanneld</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动flannel</p>
+<li>
+<p>启动flannel</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start flanneld</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动docker，使用flannel网络</p>
+<li>
+<p>启动docker，使用flannel网络</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
-
 </li>
 </ol>
-<h2 id="安装kubernetes"><a href="#安装kubernetes" class="headerlink" title="安装kubernetes"></a>安装kubernetes</h2><ol>
-<li><p>yum安装kubernetes</p>
+<h2 id="安装kubernetes"><a class="markdownIt-Anchor" href="#安装kubernetes"></a> 安装kubernetes</h2>
+<ol>
+<li>
+<p>yum安装kubernetes</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install kubernetes</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开kubelet配置文件</p>
+<li>
+<p>打开kubelet配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/kubernetes/kubelet</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>修改配置如下</p>
+<li>
+<p>修改配置如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">KUBELET_ADDRESS=&quot;--address=0.0.0.0&quot; # 修改127.0.0.1为0.0.0.0</span><br><span class="line">KUBELET_HOSTNAME=&quot;--hostname-override=k8s-master&quot; # 修改127.0.0.1为k8s-master</span><br><span class="line">KUBELET_API_SERVER=&quot;--api-servers=http://192.168.199.129:8080&quot; # 修改127.0.0.1为master的ip地址</span><br><span class="line">KUBELET_POD_INFRA_CONTAINER=&quot;--pod-infra-container-image=registry.access.redhat.com/rhel7/pod-infrastructure:latest&quot;</span><br><span class="line">KUBELET_ARGS=&quot;--cluster-dns=192.168.199.129 --cluster-domain=cluster.local&quot; # 添加参数</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开apiserver配置文件</p>
+<li>
+<p>打开apiserver配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/kubernetes/apiserver</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>修改配置如下</p>
+<li>
+<p>修改配置如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">KUBE_API_ADDRESS=&quot;--insecure-bind-address=0.0.0.0&quot; # 修改127.0.0.1为0.0.0.0</span><br><span class="line">KUBE_API_PORT=&quot;--port=8080&quot; # 删除注释符</span><br><span class="line">KUBELET_PORT=&quot;--kubelet-port=10250&quot; # 删除注释符</span><br><span class="line">KUBE_ETCD_SERVERS=&quot;--etcd-servers=http://192.168.199.129:2379&quot; # 修改127.0.0.1为master的ip地址</span><br><span class="line">KUBE_SERVICE_ADDRESSES=&quot;--service-cluster-ip-range=10.254.0.0/16&quot;</span><br><span class="line">KUBE_ADMISSION_CONTROL=&quot;--admission-control=NamespaceLifecycle,NamespaceExists,LimitRanger,SecurityContextDeny,ResourceQuota&quot; # 删除ServiceAccount</span><br><span class="line">KUBE_API_ARGS=&quot;&quot;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>设置服务开机启动</p>
+<li>
+<p>设置服务开机启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable kube-apiserver # 设置apiserver开机启动</span><br><span class="line">systemctl enable kube-controller-manager # 设置manager开机启动</span><br><span class="line">systemctl enable kube-scheduler # 设置scheduler开机启动</span><br><span class="line">systemctl enable kubelet # 设置kubelet开机启动</span><br><span class="line">systemctl enable kube-proxy # 设置kubelet-proxy开机启动</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动服务</p>
+<li>
+<p>启动服务</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">systemctl start kube-apiserver # 启动apiserver</span><br><span class="line">systemctl start kube-controller-manager # 启动controller-manager</span><br><span class="line">systemctl start kube-scheduler # 启动scheduler</span><br><span class="line">systemctl start kubelet # 启动kubelet</span><br><span class="line">systemctl start kube-proxy # 启动kube-proxy</span><br></pre></td></tr></table></figure>
-
 </li>
 </ol><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="安装和配置-2"><blockquote>
 <p><strong>k8s-node1主机上执行</strong></p>
 </blockquote>
-<h2 id="安装flannel网络"><a href="#安装flannel网络" class="headerlink" title="安装flannel网络"></a>安装flannel网络</h2><ol>
-<li><p>yum安装flannel</p>
+<h2 id="安装flannel网络"><a class="markdownIt-Anchor" href="#安装flannel网络"></a> 安装flannel网络</h2>
+<ol>
+<li>
+<p>yum安装flannel</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install flannel</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开flannel配置文件</p>
+<li>
+<p>打开flannel配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/flanneld</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>修改配置如下</p>
+<li>
+<p>修改配置如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FLANNEL_ETCD_ENDPOINTS=&quot;http://192.168.199.129:2379&quot; # 修改127.0.0.1为master的ip地址</span><br><span class="line">FLANNEL_ETCD_PREFIX=&quot;/k8s/network&quot; # 修改atomic.io为k8s</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>设置flannel开机启动</p>
+<li>
+<p>设置flannel开机启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable flanneld</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动flannel</p>
+<li>
+<p>启动flannel</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start flanneld</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动docker，使用flannel网络</p>
+<li>
+<p>启动docker，使用flannel网络</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
-
-
 </li>
 </ol>
-<h2 id="安装kubernetes"><a href="#安装kubernetes" class="headerlink" title="安装kubernetes"></a>安装kubernetes</h2><ol>
-<li><p>yum安装kubernetes-node</p>
+<h2 id="安装kubernetes"><a class="markdownIt-Anchor" href="#安装kubernetes"></a> 安装kubernetes</h2>
+<ol>
+<li>
+<p>yum安装kubernetes-node</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install kubernetes</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开kubernetes配置文件</p>
+<li>
+<p>打开kubernetes配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/kubernetes/config</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>修改配置如下</p>
+<li>
+<p>修改配置如下</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">KUBE_LOGTOSTDERR=<span class="string">&quot;--logtostderr=true&quot;</span></span><br><span class="line">KUBE_LOG_LEVEL=<span class="string">&quot;--v=0&quot;</span></span><br><span class="line">KUBE_ALLOW_PRIV=<span class="string">&quot;--allow-privileged=false&quot;</span></span><br><span class="line">KUBE_MASTER=<span class="string">&quot;--master=http://192.168.199.129:8080&quot;</span> <span class="comment"># 修改127.0.0.1为master的ip地址</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开kubelet配置文件</p>
+<li>
+<p>打开kubelet配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/kubernetes/kubelet</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>修改配置如下</p>
+<li>
+<p>修改配置如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">KUBELET_ADDRESS=&quot;--address=0.0.0.0&quot; # 修改127.0.0.1为0.0.0.0</span><br><span class="line">KUBELET_HOSTNAME=&quot;--hostname-override=k8s-node1&quot; # 修改127.0.0.1为k8s-node1</span><br><span class="line">KUBELET_API_SERVER=&quot;--api-servers=http://192.168.199.129:8080&quot; # 修改127.0.0.1为master的ip地址</span><br><span class="line">KUBELET_POD_INFRA_CONTAINER=&quot;--pod-infra-container-image=registry.access.redhat.com/rhel7/pod-infrastructure:latest&quot;</span><br><span class="line">KUBELET_ARGS=&quot;--cluster-dns=192.168.199.129 --cluster-domain=cluster.local&quot; # 添加参数</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>设置服务开机启动</p>
+<li>
+<p>设置服务开机启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable kubelet # 设置kubelet开机启动</span><br><span class="line">systemctl enable kube-proxy # 设置kubelet-proxy开机启动</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动服务</p>
+<li>
+<p>启动服务</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl start kubelet # 启动kubelet</span><br><span class="line">systemctl start kube-proxy # 启动kube-proxy</span><br></pre></td></tr></table></figure>
-
 </li>
 </ol><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="安装和配置-3"><blockquote>
 <p><strong>k8s-node1主机上执行</strong></p>
 </blockquote>
-<h2 id="安装flannel网络"><a href="#安装flannel网络" class="headerlink" title="安装flannel网络"></a>安装flannel网络</h2><ol>
-<li><p>yum安装flannel</p>
+<h2 id="安装flannel网络"><a class="markdownIt-Anchor" href="#安装flannel网络"></a> 安装flannel网络</h2>
+<ol>
+<li>
+<p>yum安装flannel</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install flannel</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开flannel配置文件</p>
+<li>
+<p>打开flannel配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/flanneld</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>修改配置如下</p>
+<li>
+<p>修改配置如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FLANNEL_ETCD_ENDPOINTS=&quot;http://192.168.199.129:2379&quot; # 修改127.0.0.1为master的ip地址</span><br><span class="line">FLANNEL_ETCD_PREFIX=&quot;/k8s/network&quot; # 修改atomic.io为k8s</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>设置flannel开机启动</p>
+<li>
+<p>设置flannel开机启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable flanneld</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动flannel</p>
+<li>
+<p>启动flannel</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start flanneld</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动docker，使用flannel网络</p>
+<li>
+<p>启动docker，使用flannel网络</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
-
-
 </li>
 </ol>
-<h2 id="安装kubernetes"><a href="#安装kubernetes" class="headerlink" title="安装kubernetes"></a>安装kubernetes</h2><ol>
-<li><p>yum安装kubernetes-node</p>
+<h2 id="安装kubernetes"><a class="markdownIt-Anchor" href="#安装kubernetes"></a> 安装kubernetes</h2>
+<ol>
+<li>
+<p>yum安装kubernetes-node</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install kubernetes</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开kubernetes配置文件</p>
+<li>
+<p>打开kubernetes配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/kubernetes/config</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>修改配置如下</p>
+<li>
+<p>修改配置如下</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">KUBE_LOGTOSTDERR=<span class="string">&quot;--logtostderr=true&quot;</span></span><br><span class="line">KUBE_LOG_LEVEL=<span class="string">&quot;--v=0&quot;</span></span><br><span class="line">KUBE_ALLOW_PRIV=<span class="string">&quot;--allow-privileged=false&quot;</span></span><br><span class="line">KUBE_MASTER=<span class="string">&quot;--master=http://192.168.199.129:8080&quot;</span> <span class="comment"># 修改127.0.0.1为master的ip地址</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开kubelet配置文件</p>
+<li>
+<p>打开kubelet配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/kubernetes/kubelet</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>修改配置如下</p>
+<li>
+<p>修改配置如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">KUBELET_ADDRESS=&quot;--address=0.0.0.0&quot; # 修改127.0.0.1为0.0.0.0</span><br><span class="line">KUBELET_HOSTNAME=&quot;--hostname-override=k8s-node2&quot; # 修改127.0.0.1为k8s-node2</span><br><span class="line">KUBELET_API_SERVER=&quot;--api-servers=http://192.168.199.129:8080&quot; # 修改127.0.0.1为master的ip地址</span><br><span class="line">KUBELET_POD_INFRA_CONTAINER=&quot;--pod-infra-container-image=registry.access.redhat.com/rhel7/pod-infrastructure:latest&quot;</span><br><span class="line">KUBELET_ARGS=&quot;--cluster-dns=192.168.199.129 --cluster-domain=cluster.local&quot; # 添加参数</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>设置服务开机启动</p>
+<li>
+<p>设置服务开机启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable kubelet # 设置kubelet开机启动</span><br><span class="line">systemctl enable kube-proxy # 设置kubelet-proxy开机启动</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动服务</p>
+<li>
+<p>启动服务</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl start kubelet # 启动kubelet</span><br><span class="line">systemctl start kube-proxy # 启动kube-proxy</span><br></pre></td></tr></table></figure>
-
 </li>
 </ol><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-<h2 id="检查安装是否成功"><a href="#检查安装是否成功" class="headerlink" title="检查安装是否成功"></a>检查安装是否成功</h2><blockquote>
+<h2 id="检查安装是否成功"><a class="markdownIt-Anchor" href="#检查安装是否成功"></a> 检查安装是否成功</h2>
+<blockquote>
 <p><strong>k8s-master主机上执行</strong></p>
 </blockquote>
 <ol>
-<li><p>查看node信息</p>
+<li>
+<p>查看node信息</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl get nodes -o wide</span><br></pre></td></tr></table></figure>
-
-<p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210310131111782.png" alt="查看node信息"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210310131111782.png" alt="查看node信息" /></p>
 </li>
-<li><p>创建一个Deployment配置文件</p>
+<li>
+<p>创建一个Deployment配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; deployment.yaml &lt;&lt; EOF</span><br><span class="line">apiVersion: extensions/v1beta1 # api版本，固定的</span><br><span class="line">kind: Deployment # 部署方式</span><br><span class="line">metadata: # 元数据</span><br><span class="line"> name: nginx # 名称</span><br><span class="line">spec: # pod的说明</span><br><span class="line"> replicas: 3 # pod数目</span><br><span class="line"> template: # 模板</span><br><span class="line">  metadata: # 原数据</span><br><span class="line">   labels: # 标签</span><br><span class="line">    app: nginx</span><br><span class="line">  spec: # 容器的说明</span><br><span class="line">   containers: # 容器</span><br><span class="line">   - name: nginx # 容器名</span><br><span class="line">     image: nginx:alpine # 镜像</span><br><span class="line">     ports: # 端口</span><br><span class="line">     - containerPort: 80</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动Deployment</p>
+<li>
+<p>启动Deployment</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl create -f deployment.yaml</span><br></pre></td></tr></table></figure>
-
-<p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210310153057740.png" alt="启动Deployment"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210310153057740.png" alt="启动Deployment" /></p>
 </li>
-<li><p>查看运行状态</p>
+<li>
+<p>查看运行状态</p>
 <blockquote>
-<p>第一次运行需要拉取registry.access.redhat.com/rhel7/pod-infrastructure:latest镜像，需要很长时间，而且是玄学，测试过很多次都没有很好的解决方案，后期会分享镜像包，暂时咕咕咕</p>
+<p><a target="_blank" rel="noopener" href="http://xn--registry-z09l359b063bl6uov1ccozbp1diz5a031a.access.redhat.com/rhel7/pod-infrastructure:latest%E9%95%9C%E5%83%8F%EF%BC%8C%E9%9C%80%E8%A6%81%E5%BE%88%E9%95%BF%E6%97%B6%E9%97%B4%EF%BC%8C%E8%80%8C%E4%B8%94%E6%98%AF%E7%8E%84%E5%AD%A6%EF%BC%8C%E6%B5%8B%E8%AF%95%E8%BF%87%E5%BE%88%E5%A4%9A%E6%AC%A1%E9%83%BD%E6%B2%A1%E6%9C%89%E5%BE%88%E5%A5%BD%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%8C%E5%90%8E%E6%9C%9F%E4%BC%9A%E5%88%86%E4%BA%AB%E9%95%9C%E5%83%8F%E5%8C%85%EF%BC%8C%E6%9A%82%E6%97%B6%E5%92%95%E5%92%95%E5%92%95">第一次运行需要拉取registry.access.redhat.com/rhel7/pod-infrastructure:latest镜像，需要很长时间，而且是玄学，测试过很多次都没有很好的解决方案，后期会分享镜像包，暂时咕咕咕</a></p>
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kubectl get deployment # 获取deployment信息</span><br><span class="line">kubectl get pods -o wide # 获取pod信息</span><br></pre></td></tr></table></figure>
-
-<p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210310153222761.png" alt="查看运行状态"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210310153222761.png" alt="查看运行状态" /></p>
 </li>
 </ol><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="安装方式-2"><p>咕咕咕</p><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
 <!-- tab 多master部署 -->
-
 <p>咕咕咕</p><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">悲鸣</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.accepted.fun/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/">https://blog.accepted.fun/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.accepted.fun" target="_blank">AC不是说说而已</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4/">运维</a><a class="post-meta__tags" href="/tags/k8s/">k8s</a><a class="post-meta__tags" href="/tags/kubernetes/">kubernetes</a></div><div class="post_share"><div class="social-share" data-image="https://source.accepted.fun/image/cover/9.jpg" data-sites="qq,wechat,weibo,twitter,facebook"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/01/28/JumpServer%E5%A0%A1%E5%9E%92%E6%9C%BA%E5%AE%89%E8%A3%85/"><img class="next-cover" data-lazy-src="https://source.accepted.fun/image/cover/8.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">JumpServer堡垒机安装</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/12/24/KVM安装虚拟机及常用命令/" title="KVM安装虚拟机及常用命令"><img class="cover" data-lazy-src="https://source.accepted.fun/image/cover/3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-24</div><div class="title">KVM安装虚拟机及常用命令</div></div></a></div><div><a href="/2021/01/28/JumpServer堡垒机安装/" title="JumpServer堡垒机安装"><img class="cover" data-lazy-src="https://source.accepted.fun/image/cover/8.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-28</div><div class="title">JumpServer堡垒机安装</div></div></a></div><div><a href="/2020/12/25/Zabbix监控系统安装/" title="Zabbix监控系统安装"><img class="cover" data-lazy-src="https://source.accepted.fun/image/cover/4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-25</div><div class="title">Zabbix监控系统安装</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Gitalk</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="gitalk-container"></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">悲鸣</div><div class="author-info__description">致力于分享，在学习中成长</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1094630886&amp;site=qq&amp;menu=yes"><i class="fab fa-qq"></i><span>联系我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/jiaxinonly" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1094630886@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">欢迎访问^~^</div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="card-content"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85"><span class="toc-number">1.</span> <span class="toc-text">Kubernetes集群安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%87%86%E5%A4%87"><span class="toc-number">1.1.</span> <span class="toc-text">安装准备</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#CentOS7-5-%E4%B8%89%E5%8F%B0%E4%B8%BB%E6%9C%BA%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">CentOS7.5  三台主机环境：</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E7%8E%AF%E5%A2%83"><span class="toc-number">1.2.</span> <span class="toc-text">初始化环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85docker"><span class="toc-number">1.3.</span> <span class="toc-text">安装docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85etcd"><span class="toc-number">1.4.</span> <span class="toc-text">安装etcd</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85flannel%E7%BD%91%E7%BB%9C"><span class="toc-number">1.5.</span> <span class="toc-text">安装flannel网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85kubernetes"><span class="toc-number">1.6.</span> <span class="toc-text">安装kubernetes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85flannel%E7%BD%91%E7%BB%9C"><span class="toc-number">1.7.</span> <span class="toc-text">安装flannel网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85kubernetes"><span class="toc-number">1.8.</span> <span class="toc-text">安装kubernetes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85flannel%E7%BD%91%E7%BB%9C"><span class="toc-number">1.9.</span> <span class="toc-text">安装flannel网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85kubernetes"><span class="toc-number">1.10.</span> <span class="toc-text">安装kubernetes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E5%AE%89%E8%A3%85%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F"><span class="toc-number">1.11.</span> <span class="toc-text">检查安装是否成功</span></a></li></ol></li></ol></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/" title="Kubernetes集群安装"><img data-lazy-src="https://source.accepted.fun/image/cover/9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Kubernetes集群安装"/></a><div class="content"><a class="title" href="/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/" title="Kubernetes集群安装">Kubernetes集群安装</a><time datetime="2021-03-06T13:52:34.000Z" title="发表于 2021-03-06 21:52:34">2021-03-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/28/JumpServer%E5%A0%A1%E5%9E%92%E6%9C%BA%E5%AE%89%E8%A3%85/" title="JumpServer堡垒机安装"><img data-lazy-src="https://source.accepted.fun/image/cover/8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JumpServer堡垒机安装"/></a><div class="content"><a class="title" href="/2021/01/28/JumpServer%E5%A0%A1%E5%9E%92%E6%9C%BA%E5%AE%89%E8%A3%85/" title="JumpServer堡垒机安装">JumpServer堡垒机安装</a><time datetime="2021-01-28T12:39:49.000Z" title="发表于 2021-01-28 20:39:49">2021-01-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/19/Windows%E6%BF%80%E6%B4%BB/" title="Windows激活"><img data-lazy-src="https://source.accepted.fun/image/cover/7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Windows激活"/></a><div class="content"><a class="title" href="/2021/01/19/Windows%E6%BF%80%E6%B4%BB/" title="Windows激活">Windows激活</a><time datetime="2021-01-19T12:11:05.000Z" title="发表于 2021-01-19 20:11:05">2021-01-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/13/Win10%E5%85%B3%E9%97%ADWindowsDefender/" title="Win10关闭WindowsDefender"><img data-lazy-src="https://source.accepted.fun/image/cover/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Win10关闭WindowsDefender"/></a><div class="content"><a class="title" href="/2021/01/13/Win10%E5%85%B3%E9%97%ADWindowsDefender/" title="Win10关闭WindowsDefender">Win10关闭WindowsDefender</a><time datetime="2021-01-13T13:10:47.000Z" title="发表于 2021-01-13 21:10:47">2021-01-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/02/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1%E7%94%B3%E8%AF%B7/" title="西南科技大学学生邮箱申请"><img data-lazy-src="https://source.accepted.fun/image/cover/5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="西南科技大学学生邮箱申请"/></a><div class="content"><a class="title" href="/2021/01/02/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1%E7%94%B3%E8%AF%B7/" title="西南科技大学学生邮箱申请">西南科技大学学生邮箱申请</a><time datetime="2021-01-02T08:41:22.000Z" title="发表于 2021-01-02 16:41:22">2021-01-02</time></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://source.accepted.fun/image/index.png)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 悲鸣</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="icp"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/home"><img class="icp-icon" src="/img/icp.png" alt="ICP"/><span>湘ICP备20004504号</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">悲鸣</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.accepted.fun/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/">https://blog.accepted.fun/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.accepted.fun" target="_blank">AC不是说说而已</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4/">运维</a><a class="post-meta__tags" href="/tags/k8s/">k8s</a><a class="post-meta__tags" href="/tags/kubernetes/">kubernetes</a></div><div class="post_share"><div class="social-share" data-image="https://source.accepted.fun/image/cover/9.jpg" data-sites="qq,wechat,weibo,twitter,facebook"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/01/28/JumpServer%E5%A0%A1%E5%9E%92%E6%9C%BA%E5%AE%89%E8%A3%85/"><img class="next-cover" data-lazy-src="https://source.accepted.fun/image/cover/8.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">JumpServer堡垒机安装</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/01/28/JumpServer堡垒机安装/" title="JumpServer堡垒机安装"><img class="cover" data-lazy-src="https://source.accepted.fun/image/cover/8.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-28</div><div class="title">JumpServer堡垒机安装</div></div></a></div><div><a href="/2020/12/24/KVM安装虚拟机及常用命令/" title="KVM安装虚拟机及常用命令"><img class="cover" data-lazy-src="https://source.accepted.fun/image/cover/3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-24</div><div class="title">KVM安装虚拟机及常用命令</div></div></a></div><div><a href="/2020/12/25/Zabbix监控系统安装/" title="Zabbix监控系统安装"><img class="cover" data-lazy-src="https://source.accepted.fun/image/cover/4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-25</div><div class="title">Zabbix监控系统安装</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Gitalk</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="gitalk-container"></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">悲鸣</div><div class="author-info__description">致力于分享，在学习中成长</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1094630886&amp;site=qq&amp;menu=yes"><i class="fab fa-qq"></i><span>联系我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/jiaxinonly" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1094630886@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">欢迎访问^~^</div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="card-content"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85"><span class="toc-number">1.</span> <span class="toc-text"> Kubernetes集群安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%87%86%E5%A4%87"><span class="toc-number">1.1.</span> <span class="toc-text"> 安装准备</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#centos75-%E4%B8%89%E5%8F%B0%E4%B8%BB%E6%9C%BA%E7%8E%AF%E5%A2%83"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text"> CentOS7.5  三台主机环境：</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E7%8E%AF%E5%A2%83"><span class="toc-number">1.2.</span> <span class="toc-text"> 初始化环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85docker"><span class="toc-number">1.3.</span> <span class="toc-text"> 安装docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85etcd"><span class="toc-number">1.4.</span> <span class="toc-text"> 安装etcd</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85flannel%E7%BD%91%E7%BB%9C"><span class="toc-number">1.5.</span> <span class="toc-text"> 安装flannel网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85kubernetes"><span class="toc-number">1.6.</span> <span class="toc-text"> 安装kubernetes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85flannel%E7%BD%91%E7%BB%9C"><span class="toc-number">1.7.</span> <span class="toc-text"> 安装flannel网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85kubernetes"><span class="toc-number">1.8.</span> <span class="toc-text"> 安装kubernetes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85flannel%E7%BD%91%E7%BB%9C"><span class="toc-number">1.9.</span> <span class="toc-text"> 安装flannel网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85kubernetes"><span class="toc-number">1.10.</span> <span class="toc-text"> 安装kubernetes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E5%AE%89%E8%A3%85%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F"><span class="toc-number">1.11.</span> <span class="toc-text"> 检查安装是否成功</span></a></li></ol></li></ol></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/" title="Kubernetes集群安装"><img data-lazy-src="https://source.accepted.fun/image/cover/9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Kubernetes集群安装"/></a><div class="content"><a class="title" href="/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/" title="Kubernetes集群安装">Kubernetes集群安装</a><time datetime="2021-03-06T13:52:34.000Z" title="发表于 2021-03-06 21:52:34">2021-03-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/28/JumpServer%E5%A0%A1%E5%9E%92%E6%9C%BA%E5%AE%89%E8%A3%85/" title="JumpServer堡垒机安装"><img data-lazy-src="https://source.accepted.fun/image/cover/8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JumpServer堡垒机安装"/></a><div class="content"><a class="title" href="/2021/01/28/JumpServer%E5%A0%A1%E5%9E%92%E6%9C%BA%E5%AE%89%E8%A3%85/" title="JumpServer堡垒机安装">JumpServer堡垒机安装</a><time datetime="2021-01-28T12:39:49.000Z" title="发表于 2021-01-28 20:39:49">2021-01-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/19/Windows%E6%BF%80%E6%B4%BB/" title="Windows激活"><img data-lazy-src="https://source.accepted.fun/image/cover/7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Windows激活"/></a><div class="content"><a class="title" href="/2021/01/19/Windows%E6%BF%80%E6%B4%BB/" title="Windows激活">Windows激活</a><time datetime="2021-01-19T12:11:05.000Z" title="发表于 2021-01-19 20:11:05">2021-01-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/13/Win10%E5%85%B3%E9%97%ADWindowsDefender/" title="Win10关闭WindowsDefender"><img data-lazy-src="https://source.accepted.fun/image/cover/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Win10关闭WindowsDefender"/></a><div class="content"><a class="title" href="/2021/01/13/Win10%E5%85%B3%E9%97%ADWindowsDefender/" title="Win10关闭WindowsDefender">Win10关闭WindowsDefender</a><time datetime="2021-01-13T13:10:47.000Z" title="发表于 2021-01-13 21:10:47">2021-01-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/02/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1%E7%94%B3%E8%AF%B7/" title="西南科技大学学生邮箱申请"><img data-lazy-src="https://source.accepted.fun/image/cover/5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="西南科技大学学生邮箱申请"/></a><div class="content"><a class="title" href="/2021/01/02/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1%E7%94%B3%E8%AF%B7/" title="西南科技大学学生邮箱申请">西南科技大学学生邮箱申请</a><time datetime="2021-01-02T08:41:22.000Z" title="发表于 2021-01-02 16:41:22">2021-01-02</time></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://source.accepted.fun/image/index.png)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 悲鸣</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="icp"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/home"><img class="icp-icon" src="/img/icp.png" alt="ICP"/><span>湘ICP备20004504号</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
  <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
   function initValine () {
     let initData = {
