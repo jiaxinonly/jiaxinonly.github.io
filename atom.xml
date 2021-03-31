@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2021-03-15T11:43:39.218Z</updated>
+  <updated>2021-03-31T13:10:58.380Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -17,27 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Kubernetes集群安装</title>
-    <link href="https://blog.accepted.fun/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/"/>
-    <id>https://blog.accepted.fun/2021/03/06/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/</id>
-    <published>2021-03-06T13:52:34.000Z</published>
-    <updated>2021-03-15T11:43:39.218Z</updated>
+    <title>Ferry工单系统安装</title>
+    <link href="https://blog.accepted.fun/2021/03/31/Ferry%E5%B7%A5%E5%8D%95%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    <id>https://blog.accepted.fun/2021/03/31/Ferry%E5%B7%A5%E5%8D%95%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</id>
+    <published>2021-03-31T12:44:28.000Z</published>
+    <updated>2021-03-31T13:10:58.380Z</updated>
     
     
-    <summary type="html">Kubernetes集群安装</summary>
+    <summary type="html">Ferry工单系统安装</summary>
     
     
     
     <category term="运维" scheme="https://blog.accepted.fun/categories/%E8%BF%90%E7%BB%B4/"/>
     
-    <category term="kubernetes" scheme="https://blog.accepted.fun/categories/%E8%BF%90%E7%BB%B4/kubernetes/"/>
+    <category term="ferry" scheme="https://blog.accepted.fun/categories/%E8%BF%90%E7%BB%B4/ferry/"/>
     
     
     <category term="运维" scheme="https://blog.accepted.fun/tags/%E8%BF%90%E7%BB%B4/"/>
     
-    <category term="k8s" scheme="https://blog.accepted.fun/tags/k8s/"/>
+    <category term="linux" scheme="https://blog.accepted.fun/tags/linux/"/>
     
-    <category term="kubernetes" scheme="https://blog.accepted.fun/tags/kubernetes/"/>
+    <category term="docker" scheme="https://blog.accepted.fun/tags/docker/"/>
+    
+    <category term="ferry" scheme="https://blog.accepted.fun/tags/ferry/"/>
     
   </entry>
   
