@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.accepted.fun/2021/07/26/Kubernetes%E9%9B%86%E7%BE%A4%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85/</loc>
+    
+    <lastmod>2021-11-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.accepted.fun/2021/11/08/Redis%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85/</loc>
     
     <lastmod>2021-11-10</lastmod>
@@ -72,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/2021/07/26/Kubernetes%E9%9B%86%E7%BE%A4%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%20/</loc>
-    
-    <lastmod>2021-11-08</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.accepted.fun/2021/07/25/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2021-11-08</lastmod>
@@ -123,13 +123,6 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/tags/Docker/</loc>
-    <lastmod>2021-11-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.accepted.fun/tags/Ferry/</loc>
     <lastmod>2021-11-10</lastmod>
     <changefreq>daily</changefreq>
@@ -138,6 +131,13 @@
   
   <url>
     <loc>https://blog.accepted.fun/tags/Hexo/</loc>
+    <lastmod>2021-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/tags/Docker/</loc>
     <lastmod>2021-11-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -165,13 +165,6 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/tags/Redis/</loc>
-    <lastmod>2021-11-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.accepted.fun/tags/kubernetes/</loc>
     <lastmod>2021-11-10</lastmod>
     <changefreq>daily</changefreq>
@@ -180,6 +173,13 @@
   
   <url>
     <loc>https://blog.accepted.fun/tags/Nodejs/</loc>
+    <lastmod>2021-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/tags/Redis/</loc>
     <lastmod>2021-11-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -223,7 +223,7 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Hexo/</loc>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Docker/</loc>
     <lastmod>2021-11-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -251,14 +251,7 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Docker/</loc>
-    <lastmod>2021-11-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Ferry/</loc>
     <lastmod>2021-11-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -272,14 +265,21 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Ferry/</loc>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Nodejs/</loc>
     <lastmod>2021-11-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Nodejs/</loc>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Hexo/</loc>
+    <lastmod>2021-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2021-11-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

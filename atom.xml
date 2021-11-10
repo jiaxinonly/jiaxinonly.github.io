@@ -62,10 +62,10 @@
   
   <entry>
     <title>Kubernetes集群快速安装</title>
-    <link href="https://blog.accepted.fun/2021/07/26/Kubernetes%E9%9B%86%E7%BE%A4%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%20/"/>
-    <id>https://blog.accepted.fun/2021/07/26/Kubernetes%E9%9B%86%E7%BE%A4%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%20/</id>
+    <link href="https://blog.accepted.fun/2021/07/26/Kubernetes%E9%9B%86%E7%BE%A4%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85/"/>
+    <id>https://blog.accepted.fun/2021/07/26/Kubernetes%E9%9B%86%E7%BE%A4%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85/</id>
     <published>2021-07-26T13:52:34.000Z</published>
-    <updated>2021-11-08T07:43:28.357Z</updated>
+    <updated>2021-11-10T10:04:20.777Z</updated>
     
     
     <summary type="html">Kubernetes集群快速安装，使用kubeadm方式安装，非高可用</summary>
