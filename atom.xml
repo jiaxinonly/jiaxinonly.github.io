@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2021-11-08T08:55:58.738Z</updated>
+  <updated>2021-11-10T06:12:42.455Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Redis数据库安装</title>
+    <link href="https://blog.accepted.fun/2021/11/08/Redis%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85/"/>
+    <id>https://blog.accepted.fun/2021/11/08/Redis%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85/</id>
+    <published>2021-11-08T09:33:57.000Z</published>
+    <updated>2021-11-10T06:12:42.455Z</updated>
+    
+    
+    <summary type="html">Redis数据库安装</summary>
+    
+    
+    
+    <category term="安装和部署" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="非关系型数据库" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="Redis" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/"/>
+    
+    
+    <category term="Redis" scheme="https://blog.accepted.fun/tags/Redis/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Docker安装</title>
     <link href="https://blog.accepted.fun/2021/11/08/Docker%E5%AE%89%E8%A3%85/"/>
     <id>https://blog.accepted.fun/2021/11/08/Docker%E5%AE%89%E8%A3%85/</id>
     <published>2021-11-08T07:31:56.000Z</published>
-    <updated>2021-11-08T08:55:58.738Z</updated>
+    <updated>2021-11-10T06:11:59.873Z</updated>
     
     
     <summary type="html">Docker安装</summary>
