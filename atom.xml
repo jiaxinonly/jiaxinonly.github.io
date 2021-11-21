@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2021-11-10T09:57:30.600Z</updated>
+  <updated>2021-11-21T09:15:27.555Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nginx安装</title>
+    <link href="https://blog.accepted.fun/2021/11/21/Nginx%E5%AE%89%E8%A3%85/"/>
+    <id>https://blog.accepted.fun/2021/11/21/Nginx%E5%AE%89%E8%A3%85/</id>
+    <published>2021-11-21T05:28:39.000Z</published>
+    <updated>2021-11-21T09:15:27.555Z</updated>
+    
+    
+    <summary type="html">Nginx安装</summary>
+    
+    
+    
+    <category term="安装和部署" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="Nginx" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Nginx/"/>
+    
+    
+    <category term="Nginx" scheme="https://blog.accepted.fun/tags/Nginx/"/>
+    
+  </entry>
   
   <entry>
     <title>Redis数据库安装</title>
