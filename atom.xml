@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2021-11-21T09:15:27.555Z</updated>
+  <updated>2021-11-22T10:20:43.117Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -17,11 +17,55 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Kubernetes集群部署ingress-nginx</title>
+    <link href="https://blog.accepted.fun/2021/11/22/Kubernetes%E5%AE%89%E8%A3%85ingress-nginx/"/>
+    <id>https://blog.accepted.fun/2021/11/22/Kubernetes%E5%AE%89%E8%A3%85ingress-nginx/</id>
+    <published>2021-11-22T05:35:48.000Z</published>
+    <updated>2021-11-22T10:20:43.117Z</updated>
+    
+    
+    <summary type="html">Kubenetes集群部署ingress-nginx服务，使用Kubeadm部署环境</summary>
+    
+    
+    
+    <category term="安装和部署" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="ingress" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/ingress/"/>
+    
+    
+    <category term="Kubernetes" scheme="https://blog.accepted.fun/tags/Kubernetes/"/>
+    
+    <category term="ingress-nginx" scheme="https://blog.accepted.fun/tags/ingress-nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Helm安装</title>
+    <link href="https://blog.accepted.fun/2021/11/22/Helm%E5%AE%89%E8%A3%85/"/>
+    <id>https://blog.accepted.fun/2021/11/22/Helm%E5%AE%89%E8%A3%85/</id>
+    <published>2021-11-22T05:18:39.000Z</published>
+    <updated>2021-11-22T13:11:58.463Z</updated>
+    
+    
+    <summary type="html">Helm安装</summary>
+    
+    
+    
+    <category term="安装和部署" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="Helm" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Helm/"/>
+    
+    
+    <category term="Helm" scheme="https://blog.accepted.fun/tags/Helm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Nginx安装</title>
     <link href="https://blog.accepted.fun/2021/11/21/Nginx%E5%AE%89%E8%A3%85/"/>
     <id>https://blog.accepted.fun/2021/11/21/Nginx%E5%AE%89%E8%A3%85/</id>
     <published>2021-11-21T05:28:39.000Z</published>
-    <updated>2021-11-21T09:15:27.555Z</updated>
+    <updated>2021-11-22T13:11:39.978Z</updated>
     
     
     <summary type="html">Nginx安装</summary>
@@ -86,7 +130,7 @@
     <link href="https://blog.accepted.fun/2021/07/26/Kubernetes%E9%9B%86%E7%BE%A4%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85/"/>
     <id>https://blog.accepted.fun/2021/07/26/Kubernetes%E9%9B%86%E7%BE%A4%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85/</id>
     <published>2021-07-26T13:52:34.000Z</published>
-    <updated>2021-11-20T04:11:50.516Z</updated>
+    <updated>2021-11-22T05:38:22.299Z</updated>
     
     
     <summary type="html">Kubernetes集群快速安装，使用kubeadm方式安装，非高可用</summary>
@@ -95,10 +139,10 @@
     
     <category term="安装和部署" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/"/>
     
-    <category term="kubernetes" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/kubernetes/"/>
+    <category term="Kubernetes" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Kubernetes/"/>
     
     
-    <category term="kubernetes" scheme="https://blog.accepted.fun/tags/kubernetes/"/>
+    <category term="Kubernetes" scheme="https://blog.accepted.fun/tags/Kubernetes/"/>
     
   </entry>
   
