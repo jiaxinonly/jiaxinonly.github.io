@@ -221,14 +221,14 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/tags/ingress-nginx/</loc>
+    <loc>https://blog.accepted.fun/tags/nfs/</loc>
     <lastmod>2021-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/tags/nfs/</loc>
+    <loc>https://blog.accepted.fun/tags/ingress-nginx/</loc>
     <lastmod>2021-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -277,14 +277,14 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/tags/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/</loc>
+    <loc>https://blog.accepted.fun/tags/zabbix/</loc>
     <lastmod>2021-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/tags/zabbix/</loc>
+    <loc>https://blog.accepted.fun/tags/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/</loc>
     <lastmod>2021-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -412,14 +412,14 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/</loc>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E7%9B%91%E6%8E%A7/</loc>
     <lastmod>2021-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E7%9B%91%E6%8E%A7/</loc>
+    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/</loc>
     <lastmod>2021-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -454,14 +454,14 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/</loc>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E7%9B%91%E6%8E%A7/zabbix/</loc>
     <lastmod>2021-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E7%9B%91%E6%8E%A7/zabbix/</loc>
+    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/</loc>
     <lastmod>2021-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
