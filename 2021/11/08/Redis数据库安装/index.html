@@ -174,19 +174,19 @@ if (asideStatus !== undefined) {
 <p>具体安装步骤请参考<a href="/2021/11/08/Docker%E5%AE%89%E8%A3%85/">Docker安装</a></p>
 <h3 id="安装Redis"><a href="#安装Redis" class="headerlink" title="安装Redis"></a>安装Redis</h3><ol>
 <li><p>创建数据目录，用于持久化数据</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /data/redis/&#123;conf,data&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir -p /data/redis/&#123;conf,data&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>创建配置文件，请自行设置密码</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; /data/redis/conf/redis.conf &lt;&lt; EOF</span><br><span class="line"><span class="meta">#</span><span class="bash"> 监听地址</span></span><br><span class="line">bind 0.0.0.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 开启AOF持久化</span></span><br><span class="line">appendonly yes </span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置密码，如果不需要密码，删除即可</span></span><br><span class="line">requirepass 密码 </span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat &gt; /data/redis/conf/redis.conf &lt;&lt; EOF</span><br><span class="line"><span class="meta">#</span><span class="bash"> 监听地址</span></span><br><span class="line">bind 0.0.0.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 开启AOF持久化</span></span><br><span class="line">appendonly yes </span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置密码，如果不需要密码，删除即可</span></span><br><span class="line">requirepass 密码 </span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>启动Redis</p>
 <blockquote>
 <p>–name 指定容器名<br>-p 设置映射端口，主机端口:容器端口<br>-v 设置映射文件，主机文件:容器文件<br>-d 后台运行<br>redis-server redis启动配置文件</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker run \</span><br><span class="line">--name redis \</span><br><span class="line">-p 6379:6379 \</span><br><span class="line">-v /data/redis/conf/redis.conf:/usr/loacl/redis.conf \</span><br><span class="line">-v /data/redis/data:/data \</span><br><span class="line">-d redis:6.2.5 redis-server /usr/loacl/redis.conf</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run \</span><br><span class="line">--name redis \</span><br><span class="line">-p 6379:6379 \</span><br><span class="line">-v /data/redis/conf/redis.conf:/usr/loacl/redis.conf \</span><br><span class="line">-v /data/redis/data:/data \</span><br><span class="line">-d redis:6.2.5 redis-server /usr/loacl/redis.conf</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>查看运行结果</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20211108212049036.png" alt="查看运行结果"></p>
 </li>
@@ -196,88 +196,88 @@ if (asideStatus !== undefined) {
 <blockquote>
 <p>也可以用<strong>docker exec -it redis redis-cli -a 密码</strong>命令，但不建议，会暴露密码</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it redis redis-cli</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker exec -it redis redis-cli</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>使用密码</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">auth 密码</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">auth 密码</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
 <h2 id="源码安装"><a href="#源码安装" class="headerlink" title="源码安装"></a>源码安装</h2><ol>
 <li><p>创建redis用户</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd redis</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">useradd redis</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>安装wget和gcc</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install wget gcc</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum -y install wget gcc</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>下载源码包</p>
 <blockquote>
 <p>github下载地址：<a target="_blank" rel="noopener" href="https://github.com/redis/redis/releases">https://github.com/redis/redis/releases</a><br>redis官方下载地址：<a target="_blank" rel="noopener" href="https://download.redis.io/releases/">https://download.redis.io/releases/</a></p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://download.redis.io/releases/redis-6.2.5.tar.gz</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget http://download.redis.io/releases/redis-6.2.5.tar.gz</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>解压包</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xzvf redis-6.2.5.tar.gz</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar -xzvf redis-6.2.5.tar.gz</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>进入目录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd redis-6.2.5</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd redis-6.2.5</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>编译安装</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make &amp;&amp; make install PREFIX=/usr/local/redis </span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">make &amp;&amp; make install PREFIX=/usr/local/redis </span><br></pre></td></tr></table></figure>
 
 
 </li>
 </ol>
 <ol start="7">
 <li><p>拷贝配置文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp redis.conf /usr/local/redis/redis.conf</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp redis.conf /usr/local/redis/redis.conf</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>打开配置文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /usr/local/redis/redis.conf</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vi /usr/local/redis/redis.conf</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>修改如下配置</p>
 <blockquote>
 <p>bind 监听的IP<br>daemonize 以守护进程方式启动<br>logfile 日志文件的路径(有无引号都一样)<br>dir 持久化存储文件的路径<br>requirepass 配置密码，<strong>请自行修改</strong><br>appendonly 开启AOF持久化</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">bind 0.0.0.0</span><br><span class="line">daemonize yes</span><br><span class="line">logfile /usr/local/redis/redis.log</span><br><span class="line">dir /usr/local/redis/</span><br><span class="line">requirepass 密码</span><br><span class="line">appendonly yes</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">bind 0.0.0.0</span><br><span class="line">daemonize yes</span><br><span class="line">logfile /usr/local/redis/redis.log</span><br><span class="line">dir /usr/local/redis/</span><br><span class="line">requirepass 密码</span><br><span class="line">appendonly yes</span><br></pre></td></tr></table></figure>
 
 
 </li>
 </ol>
 <ol start="10">
 <li><p>修改文件所有者</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown -R redis:redis /usr/local/redis</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chown -R redis:redis /usr/local/redis</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>创建service文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; /usr/lib/systemd/system/redis.service &lt;&lt; EOF</span><br><span class="line">[Unit]</span><br><span class="line">Description=redis-server</span><br><span class="line">After=network.target</span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">User=redis</span><br><span class="line">ExecStart=/usr/local/redis/bin/redis-server /usr/local/redis/redis.conf</span><br><span class="line">PrivateTmp=true</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat &gt; /usr/lib/systemd/system/redis.service &lt;&lt; EOF</span><br><span class="line">[Unit]</span><br><span class="line">Description=redis-server</span><br><span class="line">After=network.target</span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">User=redis</span><br><span class="line">ExecStart=/usr/local/redis/bin/redis-server /usr/local/redis/redis.conf</span><br><span class="line">PrivateTmp=true</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>设置开机启动</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable redis</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl enable redis</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>启动redis服务</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start redis</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl start redis</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>添加环境变量</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/profile</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vi /etc/profile</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在末尾添加如下</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export REDIS_HOME=/usr/local/redis</span><br><span class="line">export PATH=$PATH:$REDIS_HOME/bin</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export REDIS_HOME=/usr/local/redis</span><br><span class="line">export PATH=$PATH:$REDIS_HOME/bin</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>立即生效</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>连接redis</p>
 <blockquote>
 <p>也可以用<strong>redis-cli -a 密码</strong>命令，但不建议，会暴露密码</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-cli</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">redis-cli</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>使用密码</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">auth 密码</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">auth 密码</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">redis-cli -h 127.0.0.1 -p 6379 -a 密码 # 连接redis，最好不要-a 密码</span><br><span class="line">auth [用户名] 密码 # 切换用户</span><br><span class="line">info # 获取redis信息</span><br><span class="line">set key value # 设置key的值为value</span><br><span class="line">get key # 获取key的值</span><br><span class="line">keys * # 获取所有key</span><br><span class="line">select 0 # 切换到数据库0</span><br></pre></td></tr></table></figure>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">redis-cli -h 127.0.0.1 -p 6379 -a 密码 # 连接redis，最好不要-a 密码</span><br><span class="line">auth [用户名] 密码 # 切换用户</span><br><span class="line">info # 获取redis信息</span><br><span class="line">set key value # 设置key的值为value</span><br><span class="line">get key # 获取key的值</span><br><span class="line">keys * # 获取所有key</span><br><span class="line">select 0 # 切换到数据库0</span><br></pre></td></tr></table></figure>
 
 
 

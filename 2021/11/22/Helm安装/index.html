@@ -173,38 +173,38 @@ if (asideStatus !== undefined) {
 </blockquote>
 <h2 id="二进制包安装"><a href="#二进制包安装" class="headerlink" title="二进制包安装"></a>二进制包安装</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol>
 <li><p>安装wget</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install wget</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum -y install wget</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>下载helm二进制包，官方下载地址<a target="_blank" rel="noopener" href="https://github.com/helm/helm/releases">https://github.com/helm/helm/releases</a></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://get.helm.sh/helm-v3.7.1-linux-amd64.tar.gz</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget https://get.helm.sh/helm-v3.7.1-linux-amd64.tar.gz</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>解压二进制包</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xzvf helm-v3.7.1-linux-amd64.tar.gz</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar -xzvf helm-v3.7.1-linux-amd64.tar.gz</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>移动二进制文件到bin下</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv linux-amd64/helm /usr/local/bin/helm</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mv linux-amd64/helm /usr/local/bin/helm</span><br></pre></td></tr></table></figure>
 
 
 </li>
 </ol>
 <h3 id="清理"><a href="#清理" class="headerlink" title="清理"></a>清理</h3><ol>
 <li><p>删除二进制包及解压文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf helm-v3.7.1-linux-amd64.tar.gz linux-amd64</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf helm-v3.7.1-linux-amd64.tar.gz linux-amd64</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
 <h2 id="配置自动补全"><a href="#配置自动补全" class="headerlink" title="配置自动补全"></a>配置自动补全</h2><ol>
 <li><p>安装bash-completion</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y bash-completion</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum install -y bash-completion</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>配置bash-completion</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /usr/share/bash-completion/bash_completion</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source /usr/share/bash-completion/bash_completion</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>设置helm自动补全</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source &lt;(helm completion bash)</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source &lt;(helm completion bash)</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>添加helm到bash-completion配置文件中去</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">helm completion bash &gt; /etc/bash_completion.d/helm</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">helm completion bash &gt; /etc/bash_completion.d/helm</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>验证，输入helm i，然后按tab自动补全</p>
 </li>

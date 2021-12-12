@@ -195,25 +195,25 @@ if (asideStatus !== undefined) {
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210726103134504.png" alt="打开git命令行"></p>
 </li>
 <li><p>检查NodeJs环境</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source install.sh test_node</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source install.sh test_node</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210704224312446.png" alt="检查NodeJS环境"></p>
 </li>
 <li><p>检查git环境</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source install.sh test_git</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source install.sh test_git</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210704224442294.png" alt="检查git环境"></p>
 </li>
 <li><p>开始安装Hexo，<strong>需要等待比较长的一段时间</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source install.sh hexo_win</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source install.sh hexo_win</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210705001855508.png" alt="安装Hexo"></p>
 </li>
 <li><p>进入hexoblog文件夹</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd hexoblog</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd hexoblog</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>运行Hexo</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210705002304255.png" alt="运行Hexo"></p>
 </li>
@@ -226,20 +226,20 @@ if (asideStatus !== undefined) {
 </blockquote>
 <ol>
 <li><p>下载butterfly主题，在hexoblog目录下，右击选择Git Bash Here，打开命令行，克隆主题</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210720224337909.png" alt="克隆主题"></p>
 </li>
 <li><p>安装渲染器</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>修改_config.yml文件，设置主题为butterfly</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: butterfly</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">theme: butterfly</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210720224737025.png" alt="修改配置"></p>
 </li>
 <li><p>再次启动查看效果</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210720233414836.png" alt="查看主题效果"></p>
 </li>
@@ -251,12 +251,12 @@ if (asideStatus !== undefined) {
 </blockquote>
 <ol>
 <li><p>配置全局git用户</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;你的邮箱&quot;</span><br><span class="line">git config --global user.name &quot;你的昵称&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.email &quot;你的邮箱&quot;</span><br><span class="line">git config --global user.name &quot;你的昵称&quot;</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210722210238874.png" alt="配置git用户"></p>
 </li>
 <li><p>生成SSH密钥，连续回车即可</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的个人邮箱&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的个人邮箱&quot;</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210722202641518.png" alt="生成SSH密钥"></p>
 </li>
@@ -275,17 +275,17 @@ if (asideStatus !== undefined) {
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210722204429464.png" alt="复制仓库地址"></p>
 </li>
 <li><p>打开_config.yml文件，修改最后的deploy配置</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deploy:  type: git  repo: 你的仓库地址  branch: main</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">deploy:  type: git  repo: 你的仓库地址  branch: main</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在hexo文件夹下，右击选择Git Bash Here，打开命令行，生成上传文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source install.sh deploy</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source install.sh deploy</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210722205553669.png" alt="生成up.sh脚本"></p>
 </li>
 <li><p>移动up.sh文件到hexoblog文件夹下</p>
 </li>
 <li><p>在hexo文件夹下，右击选择Git Bash Here，打开命令行，上传博客到github</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source up.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source up.sh</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210722210834992.png" alt="上传到github"></p>
 </li>
@@ -293,14 +293,14 @@ if (asideStatus !== undefined) {
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210722211114742.png" alt="查看推送是否成功"></p>
 </li>
 <li><p>浏览器访问博客查看效果</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://仓库名/</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">https://仓库名/</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210722211522985.png" alt="访问远程Hexo"></p>
 </li>
 </ol>
 <h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><ol>
 <li><p>在hexoblog目录下，右击选择Git Bash Here，新建文章</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &lt;title&gt; # 新建文章</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new post &lt;title&gt; # 新建文章</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210722213740128.png" alt="新建文章"></p>
 </li>
@@ -308,7 +308,7 @@ if (asideStatus !== undefined) {
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210722214524878.png" alt="编辑文章"></p>
 </li>
 <li><p>查看效果</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20210722214739654.png" alt="查看效果"></p>
 </li>

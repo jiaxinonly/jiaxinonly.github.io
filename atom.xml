@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2021-12-05T08:48:49.579Z</updated>
+  <updated>2021-12-12T07:46:15.053Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.accepted.fun/2021/12/04/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2rancher/"/>
     <id>https://blog.accepted.fun/2021/12/04/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2rancher/</id>
     <published>2021-12-04T14:15:00.000Z</published>
-    <updated>2021-12-05T08:48:49.579Z</updated>
+    <updated>2021-12-12T07:46:15.053Z</updated>
     
     
     <summary type="html">Kubernetes集群部署rancher</summary>
@@ -59,7 +59,7 @@
     <link href="https://blog.accepted.fun/2021/11/27/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2nfs%E5%8A%A8%E6%80%81%E5%AD%98%E5%82%A8/"/>
     <id>https://blog.accepted.fun/2021/11/27/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2nfs%E5%8A%A8%E6%80%81%E5%AD%98%E5%82%A8/</id>
     <published>2021-11-27T14:18:21.000Z</published>
-    <updated>2021-12-04T14:06:30.286Z</updated>
+    <updated>2021-12-08T09:54:40.627Z</updated>
     
     
     <summary type="html">Kubernetes集群部署nfs动态存储</summary>

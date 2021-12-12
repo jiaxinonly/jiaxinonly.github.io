@@ -217,7 +217,7 @@ if (asideStatus !== undefined) {
 <p>yum被占用：</p>
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20201216101158784.png" alt="yum被占用"></p>
 <p>删除yum.pid文件：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf &#x2F;var&#x2F;run&#x2F;yum.pid</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rm -rf &#x2F;var&#x2F;run&#x2F;yum.pid</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20201216101538013.png" alt="删除yum.pid文件"></p>
 </li>
@@ -334,7 +334,7 @@ if (asideStatus !== undefined) {
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20201213194033014.png" alt="查看NAT模式网关"></p>
 </li>
 <li><p>编辑<code>配置文件</code></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-ens33</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-ens33</span><br></pre></td></tr></table></figure>
 
 <p>修改和添加如下配置</p>
 <blockquote>
@@ -343,12 +343,12 @@ if (asideStatus !== undefined) {
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20201220173159000.png" alt="配置网卡"></p>
 </li>
 <li><p>重启网络</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service network restart</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">service network restart</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20201213194836851.png" alt="重启网络"></p>
 </li>
 <li><p>查看网络状态</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip a</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ip a</span><br></pre></td></tr></table></figure>
 
 <p><img src= "/img/loading.gif" data-lazy-src="https://source.accepted.fun/image/article/image-20201220173046000.png" alt="查看网络状态"></p>
 </li>

@@ -173,19 +173,19 @@ if (asideStatus !== undefined) {
 </blockquote>
 <h2 id="创建配置文件"><a href="#创建配置文件" class="headerlink" title="创建配置文件"></a>创建配置文件</h2><ol>
 <li><p>创建配置文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; openssl.cnf &lt;&lt; EOF</span><br><span class="line"><span class="meta">#</span><span class="bash"> ca根证书配置</span></span><br><span class="line">[ ca ]</span><br><span class="line">subjectKeyIdentifier=hash</span><br><span class="line">authorityKeyIdentifier=keyid:always,issuer</span><br><span class="line">basicConstraints = critical,CA:true</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> HTTPS应用证书配置</span></span><br><span class="line">[ crt ]</span><br><span class="line">subjectKeyIdentifier = hash</span><br><span class="line">authorityKeyIdentifier=keyid:always,issuer</span><br><span class="line">basicConstraints = critical, CA:false</span><br><span class="line">keyUsage = critical, digitalSignature, cRLSign, keyEncipherment</span><br><span class="line">extendedKeyUsage = critical, serverAuth, clientAuth</span><br><span class="line">subjectAltName=@alt_names</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> SANs可以将一个证书给多个域名或IP使用</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 访问的域名或IP必须包含在此，否则无效</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 修改为你要保护的域名或者IP地址，支持通配符</span></span><br><span class="line">[alt_names]</span><br><span class="line">DNS.1 = accepted.fun</span><br><span class="line">DNS.2 = blog.accepted.fun</span><br><span class="line">IP.1 = 192.168.1.101</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat &gt; openssl.cnf &lt;&lt; EOF</span><br><span class="line"><span class="meta">#</span><span class="bash"> ca根证书配置</span></span><br><span class="line">[ ca ]</span><br><span class="line">subjectKeyIdentifier=hash</span><br><span class="line">authorityKeyIdentifier=keyid:always,issuer</span><br><span class="line">basicConstraints = critical,CA:true</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> HTTPS应用证书配置</span></span><br><span class="line">[ crt ]</span><br><span class="line">subjectKeyIdentifier = hash</span><br><span class="line">authorityKeyIdentifier=keyid:always,issuer</span><br><span class="line">basicConstraints = critical, CA:false</span><br><span class="line">keyUsage = critical, digitalSignature, cRLSign, keyEncipherment</span><br><span class="line">extendedKeyUsage = critical, serverAuth, clientAuth</span><br><span class="line">subjectAltName=@alt_names</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> SANs可以将一个证书给多个域名或IP使用</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 访问的域名或IP必须包含在此，否则无效</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 修改为你要保护的域名或者IP地址，支持通配符</span></span><br><span class="line">[alt_names]</span><br><span class="line">DNS.1 = accepted.fun</span><br><span class="line">DNS.2 = blog.accepted.fun</span><br><span class="line">IP.1 = 192.168.1.101</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
 <h2 id="生成根证书"><a href="#生成根证书" class="headerlink" title="生成根证书"></a>生成根证书</h2><ol>
 <li><p>生成根证书私钥</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl genrsa -out root.key 2048</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">openssl genrsa -out root.key 2048</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>生成根证书请求文件</p>
 <blockquote>
 <p>C：所在国家 (Country)，只能是两位字母缩写<br>ST：所在省份(State)<br>L：所在城市(Locality)<br>O：所在组织(Organization)<br>OU：所在部门(Organization Unit)<br>CN：公用名，即域名(Common Name)</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl req -new -key root.key  -out root.csr -subj &quot;/C=CN/ST=Sichuan/L=Chengdu/O=accepted/OU=accepted/CN=accepted.fun&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">openssl req -new -key root.key  -out root.csr -subj &quot;/C=CN/ST=Sichuan/L=Chengdu/O=accepted/OU=accepted/CN=accepted.fun&quot;</span><br></pre></td></tr></table></figure>
 
 
 </li>
@@ -195,22 +195,22 @@ if (asideStatus !== undefined) {
 <blockquote>
 <p>-req: 证书请求<br>-extfile：扩展文件配置和-extensions参数使用<br>-extensions：扩展配置<br>-in：证书请求文件<br>-out：证书输出文件<br>-signkey：签名的私钥<br>-days：有效期</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl x509 -req -extfile openssl.cnf -extensions ca -in root.csr -out root.crt -signkey root.key -CAcreateserial -days 3650</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">openssl x509 -req -extfile openssl.cnf -extensions ca -in root.csr -out root.crt -signkey root.key -CAcreateserial -days 3650</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
 <h2 id="签发应用证书"><a href="#签发应用证书" class="headerlink" title="签发应用证书"></a>签发应用证书</h2><ol>
 <li><p>生成应用私钥</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl genrsa -out blog.key 2048</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">openssl genrsa -out blog.key 2048</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>生成<code>bolg.accepted.fun</code>域名证书请求文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl req -new -key blog.key -out blog.csr -subj &quot;/C=CN/ST=Sichuan/L=Chengdu/O=accepted/OU=blog/CN=blog.accepted.fun&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">openssl req -new -key blog.key -out blog.csr -subj &quot;/C=CN/ST=Sichuan/L=Chengdu/O=accepted/OU=blog/CN=blog.accepted.fun&quot;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>签发证书</p>
 <blockquote>
 <p>blog.csr为证书序列号文件</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl x509 -req -extfile openssl.cnf -extensions crt -CA root.crt -CAkey root.key -CAserial blog.srl -CAcreateserial -in blog.csr -out blog.crt -days 3650</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">openssl x509 -req -extfile openssl.cnf -extensions crt -CA root.crt -CAkey root.key -CAserial blog.srl -CAcreateserial -in blog.csr -out blog.crt -days 3650</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>使用应用私钥<code>blog.key</code>和应用证书<code>blog.crt</code>为<code>bolg.accepted.fun</code>添加HTTPS服务</p>
 </li>
@@ -239,7 +239,7 @@ if (asideStatus !== undefined) {
 <blockquote>
 <p>root.key和root.crt建议保留，以后签发证书都可以用它，不用在重复信任根证书了，blog.key和blog.crt也建议保留</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf root.csr blog.csr blog.csr</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf root.csr blog.csr blog.csr</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
