@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2021-12-12T07:46:15.053Z</updated>
+  <updated>2021-12-12T12:36:17.488Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kubernetes集群部署harbor</title>
+    <link href="https://blog.accepted.fun/2021/12/08/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2harbor/"/>
+    <id>https://blog.accepted.fun/2021/12/08/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2harbor/</id>
+    <published>2021-12-08T09:40:50.000Z</published>
+    <updated>2021-12-12T12:36:17.488Z</updated>
+    
+    
+    <summary type="html">Kubernetes集群部署harbor</summary>
+    
+    
+    
+    <category term="安装和部署" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="Kubernetes" scheme="https://blog.accepted.fun/tags/Kubernetes/"/>
+    
+    <category term="harbor" scheme="https://blog.accepted.fun/tags/harbor/"/>
+    
+  </entry>
   
   <entry>
     <title>Kubernetes集群部署rancher</title>

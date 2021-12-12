@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.accepted.fun/2021/12/08/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2harbor/</loc>
+    
+    <lastmod>2021-12-12</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.accepted.fun/2021/12/04/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2rancher/</loc>
     
     <lastmod>2021-12-12</lastmod>
@@ -158,6 +165,13 @@
 
   
   <url>
+    <loc>https://blog.accepted.fun/tags/CentOS7-5/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.accepted.fun/tags/Docker/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
@@ -165,14 +179,14 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/tags/Helm/</loc>
+    <loc>https://blog.accepted.fun/tags/Ferry/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/tags/CentOS7-5/</loc>
+    <loc>https://blog.accepted.fun/tags/Helm/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -214,14 +228,7 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/tags/rancher/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/tags/Ferry/</loc>
+    <loc>https://blog.accepted.fun/tags/harbor/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -242,6 +249,13 @@
   </url>
   
   <url>
+    <loc>https://blog.accepted.fun/tags/rancher/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.accepted.fun/tags/Nginx/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
@@ -250,6 +264,13 @@
   
   <url>
     <loc>https://blog.accepted.fun/tags/Nodejs/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/tags/Redis/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -270,13 +291,6 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/tags/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.accepted.fun/tags/zabbix/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
@@ -284,7 +298,7 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/tags/Redis/</loc>
+    <loc>https://blog.accepted.fun/tags/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -300,14 +314,21 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Hexo/</loc>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Helm/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Docker/</loc>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/CentOS7-5/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Hexo/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -321,6 +342,13 @@
   </url>
   
   <url>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Docker/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E8%99%9A%E6%8B%9F%E5%8C%96%E5%B9%B3%E5%8F%B0/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
@@ -328,21 +356,7 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Helm/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Kubernetes/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/CentOS7-5/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -370,56 +384,7 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E5%A0%A1%E5%9E%92%E6%9C%BA/Jumpserver/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E8%99%9A%E6%8B%9F%E5%8C%96%E5%B9%B3%E5%8F%B0/KVM/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Nodejs/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/categories/%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/categories/%E6%BF%80%E6%B4%BB/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E7%9B%91%E6%8E%A7/</loc>
-    <lastmod>2021-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.accepted.fun/categories/%E6%8A%80%E5%B7%A7/Windows-Defender/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -440,14 +405,63 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E6%BF%80%E6%B4%BB/windows/</loc>
+    <loc>https://blog.accepted.fun/categories/%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/</loc>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E5%A0%A1%E5%9E%92%E6%9C%BA/Jumpserver/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E6%BF%80%E6%B4%BB/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E7%9B%91%E6%8E%A7/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E8%99%9A%E6%8B%9F%E5%8C%96%E5%B9%B3%E5%8F%B0/KVM/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E6%8A%80%E5%B7%A7/Windows-Defender/</loc>
+    <lastmod>2021-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.accepted.fun/categories/%E6%BF%80%E6%B4%BB/windows/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -461,7 +475,7 @@
   </url>
   
   <url>
-    <loc>https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/</loc>
+    <loc>https://blog.accepted.fun/categories/%E8%A5%BF%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/%E5%AD%A6%E7%94%9F%E9%82%AE%E7%AE%B1/</loc>
     <lastmod>2021-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
