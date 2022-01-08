@@ -6,7 +6,7 @@
   <link href="https://blog.accepted.fun/atom.xml" rel="self"/>
   
   <link href="https://blog.accepted.fun/"/>
-  <updated>2021-12-12T12:36:17.488Z</updated>
+  <updated>2022-01-08T10:33:22.637Z</updated>
   <id>https://blog.accepted.fun/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Kubernetes集群部署gitlab</title>
+    <link href="https://blog.accepted.fun/2021/12/18/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2gitlab/"/>
+    <id>https://blog.accepted.fun/2021/12/18/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2gitlab/</id>
+    <published>2021-12-18T14:33:59.000Z</published>
+    <updated>2022-01-08T10:33:22.637Z</updated>
+    
+    
+    <summary type="html">Kubernetes集群部署gittlab</summary>
+    
+    
+    
+    <category term="安装和部署" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="Kubernetes" scheme="https://blog.accepted.fun/tags/Kubernetes/"/>
+    
+    <category term="gitlab" scheme="https://blog.accepted.fun/tags/gitlab/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Kubernetes集群部署harbor</title>
     <link href="https://blog.accepted.fun/2021/12/08/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2harbor/"/>
     <id>https://blog.accepted.fun/2021/12/08/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2harbor/</id>
     <published>2021-12-08T09:40:50.000Z</published>
-    <updated>2021-12-12T12:36:17.488Z</updated>
+    <updated>2022-01-08T10:32:56.044Z</updated>
     
     
     <summary type="html">Kubernetes集群部署harbor</summary>
@@ -420,27 +441,6 @@
     
     
     <category term="CentOS7.5" scheme="https://blog.accepted.fun/tags/CentOS7-5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nodejs安装及配置</title>
-    <link href="https://blog.accepted.fun/2020/11/30/Nodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"/>
-    <id>https://blog.accepted.fun/2020/11/30/Nodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</id>
-    <published>2020-11-30T05:52:27.000Z</published>
-    <updated>2021-12-04T14:08:51.336Z</updated>
-    
-    
-    <summary type="html">Nodejs安装及配置</summary>
-    
-    
-    
-    <category term="安装和部署" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/"/>
-    
-    <category term="Nodejs" scheme="https://blog.accepted.fun/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Nodejs/"/>
-    
-    
-    <category term="Nodejs" scheme="https://blog.accepted.fun/tags/Nodejs/"/>
     
   </entry>
   
