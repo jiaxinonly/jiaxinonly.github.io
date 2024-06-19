@@ -1,0 +1,583 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Nodejs安装及配置 | AC不是说说而已</title><meta name="author" content="悲鸣"><meta name="copyright" content="悲鸣"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Nodejs安装及配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nodejs安装及配置">
+<meta property="og:url" content="https://blog.accepted.fun/2020/11/30/Nodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:site_name" content="AC不是说说而已">
+<meta property="og:description" content="Nodejs安装及配置">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://source.accepted.fun/image/cover/1.png">
+<meta property="article:published_time" content="2020-11-30T05:52:27.000Z">
+<meta property="article:modified_time" content="2024-06-19T01:22:28.443Z">
+<meta property="article:author" content="悲鸣">
+<meta property="article:tag" content="Nodejs">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://source.accepted.fun/image/cover/1.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.accepted.fun/2020/11/30/Nodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="pJIbNcA03c-s9H6TFFJIneygk62YdWZKNqTO-FtPxSs"/><meta name="baidu-site-verification" content="code-Bwfup2dnnI"/><meta name="qihu_site_verification" content="a7388e44fcafe16669c07038d677f69d"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?20e8123777f4c13274b56700b90b681d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-466BX6ZXC9"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-466BX6ZXC9');
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":520,"position":"top","messagePrev":"距离上次更新已经过了","messageNext":"天，文章可能已经失效，请留意（如果已失效请留言)"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":800,"languages":{"author":"作者: 悲鸣","link":"链接: ","source":"来源: AC不是说说而已","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Nodejs安装及配置',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-06-19 09:22:28'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">26</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Music"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/Movie"><i class="fa-fw /movies/"></i><span> 1</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('http://source.accepted.fun/image/top_img/你的名字.png')"><nav id="nav"><span id="blog-info"><a href="/" title="AC不是说说而已"><span class="site-name">AC不是说说而已</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Music"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/Movie"><i class="fa-fw /movies/"></i><span> 1</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Nodejs安装及配置</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-11-30T05:52:27.000Z" title="发表于 2020-11-30 13:52:27">2020-11-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-06-19T01:22:28.443Z" title="更新于 2024-06-19 09:22:28">2024-06-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/">安装和部署</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2/Nodejs/">Nodejs</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Nodejs安装及配置"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2020/11/30/Nodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/#post-comment"><span class="waline-comment-count" data-path="/2020/11/30/Nodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Nodejs的安装及配置"><a href="#Nodejs的安装及配置" class="headerlink" title="Nodejs的安装及配置"></a>Nodejs的安装及配置</h1><blockquote>
+<p>操作系统：win10<br>NodeJS：15.3.0</p>
+</blockquote>
+<blockquote>
+<p><strong>本文更新于2020-12-2，如果时间太久已失效，请留言</strong><br>本教程使用虚拟机全新环境进行演示，如未安装过Nodejs几乎100%安装配置成功，如未成功，请洗脸重试~</p>
+</blockquote>
+<h2 id="下载Nodejs"><a href="#下载Nodejs" class="headerlink" title="下载Nodejs"></a>下载Nodejs</h2><ol>
+<li><p>进入Nodejs<strong>官网</strong><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/" title="Nodejs官网">https://nodejs.org/zh-cn/</a> 选择下载最新版，也可以选择稳定的版本，个人喜欢用新的</p>
+ <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201153726260.png" alt="下载最新版" style="zoom:80%;" /></li>
+</ol>
+<h2 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h2><ol>
+<li><p>双击下载的安装包</p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201155147915.png" alt="双击进行安装"></p>
+</li>
+<li><p>点击<code>Next</code>，开始进入安装</p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201155825160.png" alt="点击Next"></p>
+</li>
+<li><p>勾选 <code>I accept the terms in the License Agreement</code>，然后点击<code>Next</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201163608782.png" alt="勾选同意，再点击Next"></p>
+</li>
+<li><p>点击<code>Change</code>更改安装路径</p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201164501760.png" alt="更改安装路径"></p>
+</li>
+<li><p>选择<code>D</code>盘，并为Nodejs<code>创建一个新的文件夹</code>，然后点击<code>OK</code></p>
+<blockquote>
+<p>养成良好的安装习惯,便于以后清理磁盘，和查找文件，C盘用于win10系统和系统自带软件以及必须放置在C盘的软件及文件使用，D盘用于安装软件，每次在D盘安装软件时，为软件在D盘下创建一个新的文件夹，并命名为软件名，E盘用于存放文件、视频、下载资源</p>
+</blockquote>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201164826847.png" alt="选择D盘，创建新文件夹"></p>
+</li>
+<li><p>点击<code>Next</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201165945479.png" alt="点击Next"></p>
+</li>
+<li><p>不用进行选择，默认就好，继续点击<code>Next</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201170449147.png" alt="继续点击Next"></p>
+</li>
+<li><p>不用勾选安装工具，继续点击<code>Next</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201170717201.png" alt="继续点击Next"></p>
+</li>
+<li><p>点击<code>Install</code>开始进行安装</p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201170922949.png" alt="点击Install"></p>
+</li>
+<li><p>等待几分钟后，安装完成，点击<code>Finish</code>关闭，恭喜你已经安装好Nodejs</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201171136559.png" alt="点击Finish"></p>
+</li>
+</ol>
+<h2 id="检查Nodejs和npm包管理器是否安装成功"><a href="#检查Nodejs和npm包管理器是否安装成功" class="headerlink" title="检查Nodejs和npm包管理器是否安装成功"></a>检查Nodejs和npm包管理器是否安装成功</h2><ol>
+<li><p>打开<code>cmd控制台</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201171921140.png" alt="打开cmd控制台"></p>
+</li>
+<li><p>命令行输入<code>node -v</code>查看nodejs的版本号，控制台输出版本号，说明安装成功</p>
+<blockquote>
+<p>如果提示<strong>‘node’不是内部或外部命令，也不是可运行的程序或批处理文件</strong>，要么安装出了问题，要么环境变量出了问题</p>
+</blockquote>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201172320619.png" alt="检查node"></p>
+</li>
+<li><p>命令行输入<code>npm -v</code>查看npm的版本号，控制台输出版本号，说明包管理器也没有问题</p>
+<blockquote>
+<p>如果也未出现错误,到此Nodejs已经安装成功,可以正常使用了</p>
+</blockquote>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201173530043.png" alt="检查npm"></p>
+</li>
+</ol>
+<h2 id="Nodejs环境变量配置"><a href="#Nodejs环境变量配置" class="headerlink" title="Nodejs环境变量配置"></a>Nodejs环境变量配置</h2><blockquote>
+<p>Nodejs默认模块安装路径和缓存路径均在C盘(C:\Users\你的用户名(Administrator)\AppData\Roaming\npm和C:\Users\你的用户名(Administrator)\AppData\Local\npm-cache)</p>
+</blockquote>
+<blockquote>
+<p>你可以打开<code>cmd控制台</code>使用<code>npm config get prefix</code>和<code>npm config get cache</code>命令来查看当前使用的路径</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202011904917.png" alt="查看模块安装路径和缓存路径"></p>
+<h3 id="修改模块安装和缓存路径"><a href="#修改模块安装和缓存路径" class="headerlink" title="修改模块安装和缓存路径"></a>修改模块安装和缓存路径</h3><ol>
+<li><p>在Nodejs安装目录下新建一个文件夹，并命名为<code>node_cache</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202114439195.png" alt="进入安装目录，新建node_cache文件夹"></p>
+</li>
+<li><p>使用命令修改<code>config</code>配置，首先打开<code>cmd控制台</code></p>
+<ul>
+<li>使用命令修改模块安装路径</li>
+</ul>
+<blockquote>
+<p>注意：请将路径换成你自己的<code>Nodejs安装目录</code>路径，<strong>不要怀疑，就是Nodejs的安装目录!!!</strong></p>
+</blockquote>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set prefix &quot;D:\NodeJS&quot;</span><br></pre></td></tr></table></figure>
+
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202131835404.png" alt="设置模块安装路径"></p>
+<ul>
+<li>使用命令修改缓存路径</li>
+</ul>
+<blockquote>
+<p>注意：请将路径换成你自己的<code>node_cache</code>文件夹路径</p>
+</blockquote>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set cache &quot;D:\NodeJS\node_cache&quot;</span><br></pre></td></tr></table></figure>
+
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201230953041.png" alt="设置缓存路径"></p>
+<ul>
+<li>最后你可以使用<code>npm config get prefix</code>和<code>npm config get cache</code>命令查看一下是否配置成功</li>
+</ul>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202132116595.png" alt="更改成功"></p>
+</li>
+</ol>
+<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><ol>
+<li><p>右击桌面或文件资源管理器左侧的<code>此电脑</code>，选择<code>属性</code>进入<code>系统界面</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201232308142.png" alt="打开此电脑属性"></p>
+</li>
+<li><p>点击<code>高级系统设置</code>，进入<code>系统属性界面</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201232823327.png" alt="点击高级系统设置"></p>
+</li>
+<li><p>点击<code>环境变量</code>，进入<code>环境变量界面</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201233045155.png" alt="点击环境变量"></p>
+</li>
+<li><p>双击上方<code>用户变量</code>的<code>Path</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201201233655008.png" alt="双击用户变量的Path"></p>
+</li>
+<li><p>找到Nodejs默认的配置路径，然后单击<code>选中</code>它，再点击<code>删除</code>，然后点击<code>确定</code>，返回到<code>环境变量界面</code></p>
+<blockquote>
+<p>这个配置路径是安装Nodejs时，自动生成的，如果没有可以不用管，有的话一定要删除！</p>
+</blockquote>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202135735221.png" alt="删除默认配置"></p>
+</li>
+<li><p>点击下方<code>系统变量</code>的<code>新建</code>，然后输入变量名<code>NODE_PATH</code>，变量值为<code>node_modules文件</code>的路径，最后点击<code>确定</code></p>
+<blockquote>
+<p>注意：变量名必须是<code>NODE_PATH</code>!!! <code>node_modules文件</code>在Nodejs安装目录下，这个是安装时自己生成的</p>
+</blockquote>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202140804745.png" alt="新建NODE_PATH变量"></p>
+</li>
+<li><p>你可以在<code>环境变量界面</code>看见<code>系统变量</code>多了一条<code>NODE_PATH</code>，然后点击<code>确定</code>，返回<code>系统属性界面</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202141934605.png" alt="点击确定"></p>
+</li>
+<li><p>再次点击<code>确定</code>，恭喜你环境变量已经配置好了</p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202142356779.png" alt="点击确定"></p>
+</li>
+</ol>
+<h3 id="检查配置是否成功"><a href="#检查配置是否成功" class="headerlink" title="检查配置是否成功"></a>检查配置是否成功</h3><ol>
+<li><p>打开Nodejs安装目录下的<code>node_modules文件夹</code>，可以看见里面只有一个<code>npm文件</code></p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202143101980.png" alt="查看node_modules文件夹"></p>
+</li>
+<li><p>打开Nodejs安装目录下的<code>node_cache文件夹</code>，可以看见它多了几个文件</p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202172708250.png" alt="查看node_cache文件夹"></p>
+</li>
+<li><p>打开<code>cmd控制台</code>，全局安装一个<code>vue</code>模块进行测试</p>
+<ul>
+<li>使用命令安装<code>vue</code></li>
+</ul>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install vue -g</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p> 注意：一定要加上<code>-g</code>，这是全局安装的意思，如果不加是局部安装，会安装在<code>cmd控制台</code>当前运行的目录下</p>
+</blockquote>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202144334493.png" alt="测试安装vue模块"></p>
+<ul>
+<li>此时可以看见<code>node_modules文件夹</code>下多了一个<code>vue文件夹</code></li>
+</ul>
+ <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202173521105.png" alt="查看vue安装位置" style="zoom:80%;" />
+
+<ul>
+<li>回到<code>cmd控制台</code>，进入<code>node交互界面</code>，再输入<code> require("vue")</code></li>
+</ul>
+<blockquote>
+<p>获取模块成功，配置完成，现在Nodejs的模块安装及缓存已经到D盘下了，并且能够找到模块！<br>注意：配置环境变量后，需要重新打开一下<code>cmd控制台</code>，退出<code>node交互界面</code>，使用<code>.exit</code>命令或者<code>Ctrl+C</code></p>
+</blockquote>
+ <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202162251346.png" alt="检查配置" style="zoom:80%;" /></li>
+</ol>
+<h2 id="更改npm的镜像以及安装cnpm"><a href="#更改npm的镜像以及安装cnpm" class="headerlink" title="更改npm的镜像以及安装cnpm"></a>更改npm的镜像以及安装cnpm</h2><blockquote>
+<p>因为npm的原镜像是在国外，使用起来可能会很慢，所以需要更改到国内的淘宝镜像</p>
+</blockquote>
+<ol>
+<li><p>更换 npm的源</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>查看命令为<code>npm config get registry</code></p>
+</blockquote>
+ <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202164032767.png" alt="更换npm的源" style="zoom:80%;" />
+</li>
+<li><p>安装cnpm包管理器</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202164518442.png" alt="安装cnpm"></p>
+</li>
+<li><p>再次使用命令更改<code>cnpm</code>的安装路径和缓存路径</p>
+<blockquote>
+<p>注意：请将路径更换成自己的路径</p>
+</blockquote>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm config set prefix &quot;D:\NodeJS&quot;</span><br></pre></td></tr></table></figure>
+
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202183717078.png" alt="修改cnpm的安装位置"></p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm config set cache &quot;D:\NodeJS\node_cache&quot;</span><br></pre></td></tr></table></figure>
+
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/article/image-20201202183737760.png" alt="修改cnpm缓存位置"></p>
+</li>
+</ol>
+<blockquote>
+<p>大功告成，现在你可以放心的使用Nodejs了，注意以后使用<code>npm</code>命令时，请替换为<code>cnpm</code> ，如<code>npm install vue -g</code>换成<code>cnpm install vue -g</code>，建议最好不要混用<code>npm</code>和<code>cnpm</code> ，当然一般情况下你混用也没什么问题。。。。。。</p>
+</blockquote>
+<blockquote>
+<p>最后：强迫症患者请使用<code>cnpm uninstall vue -g</code>来删除<code>vue</code>模块，并删除Nodejs安装时默认在C盘生成的<code>npm文件夹</code>(C:\Users\你的用户名(Administrator)\AppData\Roaming\npm)</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.accepted.fun">悲鸣</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.accepted.fun/2020/11/30/Nodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">https://blog.accepted.fun/2020/11/30/Nodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.accepted.fun" target="_blank">AC不是说说而已</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Nodejs/">Nodejs</a></div><div class="post_share"><div class="social-share" data-image="http://source.accepted.fun/image/cover/1.png" data-sites="qq,wechat,weibo,twitter,facebook"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2020/12/17/CentOS7.5%E5%AE%89%E8%A3%85/" title="CentOS7.5安装"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/cover/2.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">CentOS7.5安装</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Waline</span><span id="switch-btn"></span><span class="second-comment">Gitalk</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">悲鸣</div><div class="author-info__description">致力于分享，在学习中成长</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">26</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1094630886&amp;site=qq&amp;menu=yes"><i class="fab fa-qq"></i><span>联系我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/jiaxinonly" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1094630886@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问^~^</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Nodejs%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text">Nodejs的安装及配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDNodejs"><span class="toc-number">1.1.</span> <span class="toc-text">下载Nodejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Nodejs"><span class="toc-number">1.2.</span> <span class="toc-text">安装Nodejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5Nodejs%E5%92%8Cnpm%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F"><span class="toc-number">1.3.</span> <span class="toc-text">检查Nodejs和npm包管理器是否安装成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nodejs%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE"><span class="toc-number">1.4.</span> <span class="toc-text">Nodejs环境变量配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%A8%A1%E5%9D%97%E5%AE%89%E8%A3%85%E5%92%8C%E7%BC%93%E5%AD%98%E8%B7%AF%E5%BE%84"><span class="toc-number">1.4.1.</span> <span class="toc-text">修改模块安装和缓存路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">1.4.2.</span> <span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E9%85%8D%E7%BD%AE%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F"><span class="toc-number">1.4.3.</span> <span class="toc-text">检查配置是否成功</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9npm%E7%9A%84%E9%95%9C%E5%83%8F%E4%BB%A5%E5%8F%8A%E5%AE%89%E8%A3%85cnpm"><span class="toc-number">1.5.</span> <span class="toc-text">更改npm的镜像以及安装cnpm</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/06/07/samba%E5%85%B1%E4%BA%AB%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85/" title="samba共享服务安装"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/cover/1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="samba共享服务安装"/></a><div class="content"><a class="title" href="/2024/06/07/samba%E5%85%B1%E4%BA%AB%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85/" title="samba共享服务安装">samba共享服务安装</a><time datetime="2024-06-07T07:34:14.000Z" title="发表于 2024-06-07 15:34:14">2024-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/06/Python3%E5%AE%89%E8%A3%85/" title="Python3安装"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/cover/22.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python3安装"/></a><div class="content"><a class="title" href="/2024/06/06/Python3%E5%AE%89%E8%A3%85/" title="Python3安装">Python3安装</a><time datetime="2024-06-06T14:34:14.000Z" title="发表于 2024-06-06 22:34:14">2024-06-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/02/20/Kubernetes%E9%9B%86%E7%BE%A4%E9%AB%98%E5%8F%AF%E7%94%A8%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%83%A8%E7%BD%B2-%E5%9F%BA%E7%A1%80%E7%AF%87/" title="Kubernetes集群高可用二进制部署-基础篇"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/cover/11.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Kubernetes集群高可用二进制部署-基础篇"/></a><div class="content"><a class="title" href="/2023/02/20/Kubernetes%E9%9B%86%E7%BE%A4%E9%AB%98%E5%8F%AF%E7%94%A8%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%83%A8%E7%BD%B2-%E5%9F%BA%E7%A1%80%E7%AF%87/" title="Kubernetes集群高可用二进制部署-基础篇">Kubernetes集群高可用二进制部署-基础篇</a><time datetime="2023-02-20T14:52:34.000Z" title="发表于 2023-02-20 22:52:34">2023-02-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/18/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2gitlab/" title="Kubernetes集群部署gitlab"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/cover/21.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Kubernetes集群部署gitlab"/></a><div class="content"><a class="title" href="/2021/12/18/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2gitlab/" title="Kubernetes集群部署gitlab">Kubernetes集群部署gitlab</a><time datetime="2021-12-18T14:33:59.000Z" title="发表于 2021-12-18 22:33:59">2021-12-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/08/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2harbor/" title="Kubernetes集群部署harbor"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://source.accepted.fun/image/cover/20.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Kubernetes集群部署harbor"/></a><div class="content"><a class="title" href="/2021/12/08/Kubernetes%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2harbor/" title="Kubernetes集群部署harbor">Kubernetes集群部署harbor</a><time datetime="2021-12-08T09:40:50.000Z" title="发表于 2021-12-08 17:40:50">2021-12-08</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('http://source.accepted.fun/image/index.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 悲鸣</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  let initFn = window.walineFn || null
+
+  const initWaline = (Fn) => {
+    const waline = Fn(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'waline.accepted.fun:32443',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      path: window.location.pathname,
+      comment: true,
+    }, {"requiredMeta":["nick","mail"],"locale":{"placeholder":"昵称和邮箱为必填项，为了您能及时收到相关回复的邮件通知，请确保邮箱的正确性！"}}))
+
+    const destroyWaline = () => {
+      waline.destroy()
+    }
+
+    btf.addGlobalFn('pjax', destroyWaline, 'destroyWaline')
+  }
+
+  const loadWaline = async () => {
+    if (initFn) initWaline(initFn)
+    else {
+      await getCSS('https://cdn.jsdelivr.net/npm/@waline/client@3.1.2/dist/waline.min.css')
+      const { init } = await import('https://cdn.jsdelivr.net/npm/@waline/client@3.1.2/dist/waline.min.js')
+      initFn = init || Waline.init
+      initWaline(initFn)
+      window.walineFn = initFn
+    }
+  }
+
+  if ('Waline' === 'Waline' || !false) {
+    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script><script>(() => {
+  const initGitalk = () => {
+    const gitalk = new Gitalk(Object.assign({
+      clientID: '34cea4e5c44cde1f834f',
+      clientSecret: '595819526e461001922eaef8a882d3c9b171f54d',
+      repo: 'jiaxinonly.github.io',
+      owner: 'jiaxinonly',
+      admin: ['jiaxinonlyjiaxinonly'],
+      id: '8c7a74df6f39187fef9e65779d4f3347',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  const loadGitalk = async() => {
+    if (typeof Gitalk === 'function') initGitalk()
+    else {
+      await getCSS('https://cdn.jsdelivr.net/npm/gitalk@1.8.0/dist/gitalk.min.css')
+      await getScript('https://cdn.jsdelivr.net/npm/gitalk@1.8.0/dist/gitalk.min.js')
+      initGitalk()
+    }
+  }
+  
+  const commentCount = n => {
+    const isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+    if (isCommentCount) {
+      isCommentCount.textContent= n
+    }
+  }
+
+  if ('Waline' === 'Gitalk' || !false) {
+    if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+    else loadGitalk()
+  } else {
+    window.loadOtherComment = loadGitalk
+  }
+})()</script></div><script>window.addEventListener('load', () => {
+  const changeContent = content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
+        }
+
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const getComment = async () => {
+    try {
+      const res = await fetch('waline.accepted.fun:32443/api/comment?type=recent&count=6', { method: 'GET' })
+      const result = await res.json()
+      const walineArray = result.data.map(e => {
+        return {
+          'content': changeContent(e.comment),
+          'avatar': e.avatar,
+          'nick': e.nick,
+          'url': e.url + '#' + e.objectId,
+          'date': e.time || e.insertedAt
+        }
+      })
+      saveToLocal.set('waline-newest-comments', JSON.stringify(walineArray), 10/(60*24))
+      generateHtml(walineArray)
+    } catch (err) {
+      console.error(err)
+      const $dom = document.querySelector('#card-newest-comments .aside-list')
+      $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+    }
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('waline-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><div class="aplayer no-destroy" data-id="2229408821" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="true" muted></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/click-heart.min.js" async="async" mobile="false"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: true,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', 'G-466BX6ZXC9', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
